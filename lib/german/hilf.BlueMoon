@@ -1,0 +1,32 @@
+	Die Regeln für Blue Moon
+	========================
+
+Blue Moon wird mit einem Standardblatt von 52 Karten
+gespielt (keine Joker). Zu Beginn werden die Karten
+gemischt und nacheinander in vier Reihen zu 13 Karten
+offen ausgelegt (womit alle Karten verbraucht sind).
+Dann werden die Asse herausgenommen und links von den
+Reihen abgelegt, eins in jeder Zeile; es ergibt sich ein
+Tableau von 4 x 14 Karten mit vier zufälligen
+Leerplätzen.
+
+Ziel des Spieles ist, an die Asse aufsteigende Folgen
+derselben Farbe anzubauen. Dazu benutzt man die
+Leerplätze: Eine Karte darf auf einen leeren Platz
+verlegt werden, wenn sie dieselbe Farbe hat wie die
+Karte links davon und den nächsthöheren Wert. (Das
+bedeutet, dass rechts von einem König keine Karten
+abgelegt werden können.)
+
+Wenn man nicht mehr weiterkommt, werden die Karten, die
+noch nicht in einer Folge liegen, neu gemischt und im
+Tableau ausgelegt, wobei jeweils rechts von den bereits
+aufgebauten Teilfolgen ein Platz leer bleibt; es ergeben
+sich wieder vier Reihen zu je 14 Plätzen.
+
+Das Spiel ist gewonnen, wenn alle Folgen vollständig
+sind. Die Punktwertung ist einfach: Es gibt zwei Punkte
+für jede Karte, die zu einer Folge gehört, und einen
+weiteren Punkt für jede vollständige Folge (insgesamt
+100 Punkte); für jede Runde, in der die Karten neu
+gegeben werden, werden zehn Punkte abgezogen.

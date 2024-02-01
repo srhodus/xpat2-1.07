@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -e
+
+if [ -d /var/lib/games/xpat2 ] ; then
+	chmod 2775 /var/lib/games/xpat2
+fi
+
+# in older versions, /var/lib/games/xpat2/xpat was -rw-r--r-- games.root
+
+if [ -f /var/lib/games/xpat2/xpat.log ] ; then
+	chown root.games /var/lib/games/xpat2/xpat.log
+	chmod 664 /var/lib/games/xpat2/xpat.log
+fi
+
+#DEBHELPER#

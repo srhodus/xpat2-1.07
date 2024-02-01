@@ -1,0 +1,187 @@
+XCOMM #########################################################################
+XCOMM ##                                                                    ###
+XCOMM ##  MODULE     : Xpat.tmpl                                            ###
+XCOMM ##  LONGNAME   : X-Patience / machine dependant settings              ###
+XCOMM ##  AUTHOR     : Christian Anzenberger                                ###
+XCOMM ##  E-MAIL     : christian.anzenberger@siemens.at                     ###
+XCOMM ##  CREATION   : 1999-11-08                                           ###
+XCOMM ##  NOTES      : Multiplatform Version, see table below               ###
+XCOMM ##                                                                    ###
+XCOMM #########################################################################
+XCOMM ##  HISTORY OF CHANGE:                                                ###
+XCOMM ##-------+--------+--------------------------------------------+------###
+XCOMM ## VERS. |  DATE  | CHANGES                                    |AUTHOR###
+XCOMM ##-------+--------+--------------------------------------------+------###
+XCOMM ## 1.00  |19991108| relocated from Imakefile                   |  ac  ###
+XCOMM #########################################################################
+
+XCOMM #########################################################################
+XCOMM ##  Tested Environments:                                              ###
+XCOMM #########################################################################
+XCOMM ##  Vendor   Operating System  Motif           Compiler               ###
+XCOMM ##                                                                    ###
+XCOMM ##  Sun      Solaris 2.5.1     CDE 1.0.2       Sun WorkShop C 4.2     ###
+XCOMM ##  Sun      Solaris 2.5.1     CDE 1.0.2       GNU C 2.7.2            ###
+XCOMM ##                                                                    ###
+XCOMM ##  PC       Solaris 2.6       CDE 1.2         Sun WorkShop C 4.2     ###
+XCOMM ##  PC       Solaris 2.6       CDE 1.2         GNU C 2.8.1            ###
+XCOMM ##  PC       Linux SuSE 5.2    CDE 1.0.10      GNU C 2.7.2.1          ###
+XCOMM ##  PC       Linux SuSE 6.1    LessTif 0.88    egcs                   ###
+XCOMM ##  PC       Linux RedHat 5.1  LessTif 0.86    GNU C 2.7.2.3          ###
+XCOMM ##  PC       Linux RedHat 5.2  RH Motif 2.1    egcs                   ###
+XCOMM ##  PC       Linux debian 2.1  LessTif 0.89    egcs                   ###
+XCOMM ##                                                                    ###
+XCOMM #########################################################################
+
+
+XCOMM #########################################################################
+XCOMM ##     Customize Grapical User Interface                              ###
+XCOMM #########################################################################
+
+XCOMM 1. Specify User Interface (_exactly_ one of the interfaces below)
+#undef useXlib		/* similar to xpat version 1.x, not all features */
+#undef useXaw		/* the classic Athena based interface for xpat2 */
+#undef useXview		/* Xview / OpenLook interface */
+#define useXQt		/* Qt widgets, playable, but NOT YET FINISHED */
+			/* advice on Qt improvements from experienced
+			   programmers welcome at Michael.Bischoff@gmx.net */
+#undef useXm1		/* Motif based interface (first variant) */
+#undef useXm2		/* Motif based CDE/KDE-style/Gnome-style interface */
+
+XCOMM 2. Specify, if you want online help (Motif and Athena GUI only)
+XCOMM    (Why should somebody _NOT_ want help for free?)
+#define USE_ONLINEHELP
+
+XCOMM 3. Specify, if you want round cards (requires Xmu)
+#define USE_ROUND_CARDS
+
+XCOMM 4. Specify, if you want sound (must copy the appropriate sound module).
+XCOMM	 Doesn't harm if you don't have a sound card.
+#define USE_SOUND
+XCOMM    SOUNDOBJ must be one module of X-sound_*.o.
+XCOMM    Ignored if USE_SOUND is OFF.
+XCOMM    Note:  The default is to copy an .au-file to /dev/audio,
+XCOMM           so /dev/audio must have 666 permissions */
+SOUNDOBJ	= X-sound_SUN.o
+SOUNDLIB	=
+XCOMM Uncomment this if you're using the NAS audio system:
+XCOMM SOUNDOBJ	= X-sound_NAS.o
+XCOMM SOUNDLIB	= -laudio
+XCOMM Uncomment this if you have an old Adlib card:
+XCOMM SOUNDOBJ	= X-sound_FM.o
+XCOMM SOUNDLIB	=
+
+XCOMM 4.) Specify, if you want sound (must copy the appropriate sound module)
+XCOMM     SOUNDOBJ should be one module of X-sound_*.o if USE_SOUND is on, else empty
+XCOMM     Note: for X-sound_SUN.o, /dev/audio must have 666 permissions */
+#define USE_SOUND	/* doesn't harm if you don't have a sound card */
+XCOMM the default is to copy an .au-file to /dev/audio
+SOUNDOBJ 	= X-sound_SUN.o
+
+
+XCOMM 5.) Specify, if you want the antialiased card construction set (slower)
+XCOMM     (includes USE_XPM)
+#define USE_CARD_CONSTRUCTION
+
+XCOMM 6.) If you answered NO to 5.): Do you want support for full xpm cards?
+XCOMM     Note: The Motif GUI currently enables xpm support.
+#define USE_XPM
+
+XCOMM 7.) If you answered NO to 5.): Do you want to load external bitmap cards?
+#define USE_LOADCARDS
+
+XCOMM 8.) For Motif GUI only: Do you want flat toolbar buttons (KDE/Gnome-Style)?
+#define FLAT_BUTTONS
+
+XCOMM 9.) For Motif GUI only: Do you want a KDE-like toolbar?
+XCOMM     (includes FLAT_BUTTONS)
+#define KDESTYLE
+
+XCOMM 10.) For Motif GUI only: Do you want a GNOME-like toolbar?
+XCOMM     (includes FLAT_BUTTONS)
+XCOMM #define GNOMESTYLE
+
+
+XCOMM #########################################################################
+XCOMM ##     On some platforms imake doesn't define all variables           ###
+XCOMM #########################################################################
+
+XCOMM Keep in mind, that on some operating systems libraries like
+XCOMM Motif, Qt and / or Xpm are not in the base distribution.
+XCOMM Dynamically linked binaries may fail to run on other machines.
+XCOMM Although static linking may bloat your binary´s size.
+
+#ifndef XPMINCLUDE
+XCOMM Default for most platforms
+XPMINCLUDE	= -I$(INCROOT)/X11
+XCOMM Default for Solaris Visual Workshop
+XCOMM XPMINCLUDE	= /opt/SUNWspro/WS4.0/contrib/xpm/lib
+#endif
+
+#ifndef XPMLIB
+XCOMM Default for most platforms, statically linked
+XCOMM XPMLIB 	= -$(USRLIBDIR)/libXpm.a
+XCOMM Default for most platforms, dynamically linked
+XPMLIB		= -L$(USRLIBDIR) -lXpm
+XCOMM Default for Solaris Visual Workshop, statically linked
+XCOMM XPMLIB	= /opt/SUNWspro/WS4.0/contrib/xpm/lib/libXpm.a
+#endif
+
+#ifndef XMINCLUDE
+XCOMM Default for most platforms
+XMINCLUDE	= -I$(INCROOT)
+XCOMM Default path for Common Desktop Environment
+XCOMM XMINCLUDE	= -I/usr/dt/include
+#endif
+
+#ifndef XMLIB
+XCOMM Default for most platforms, statically linked
+XCOMM XMLIB 	= -$(USRLIBDIR)/libXm.a
+XCOMM Default for most platforms, dynamically linked
+XMLIB		= -L$(USRLIBDIR) -lXm
+XCOMM Default path for Common Desktop Environment
+XCOMM XMLIB	= -L/usr/dt/lib -lXm
+#endif
+
+XCOMM Red Hat Motif 2.1 needs to link the Xp lib with the Motif lib
+XCOMM XMLIB	= $(XMLIB) -lXp
+
+#ifndef OPENWINHOME
+XCOMM Default for most platforms
+OPENWINHOME	= /usr/openwin
+XCOMM Default for some Linux distributions
+XCOMM OPENWINHOME	= /usr/X11R6
+#endif
+OWINCDIR	= $(OPENWINHOME)/include
+OWLIBDIR	= $(OPENWINHOME)/lib
+
+
+XCOMM #########################################################################
+XCOMM ##     Installation Directories                                       ###
+XCOMM #########################################################################
+
+XCOMM Root directory of xpat2 installation
+XPATROOT	= /usr/games/lib/xpat
+XCOMM XPATROOT	= /usr/local/lib/xpat
+XCOMM XPATROOT	= /opt/XPat2
+
+XPATLIBDIR	= $(XPATROOT)
+APPDEFSDIR	= $(LIBDIR)
+XPATMANDIR	= $(XPATROOT)/man/man6
+
+XCOMM This is the name of the log-file, where solved games are stored:
+SCOREFILE	= /var/games/xpat.log
+XCOMM SCOREFILE	= $(XPATLIBDIR)/xpat.log
+
+XCOMM paths for installation in user's home-directory.
+LXPATBINDIR	= $(HOME)/bin
+LXPATMANDIR	= $(HOME)/xpat
+LAPPDEFSDIR	= $(HOME)
+
+XCOMM Paths for the Qt interface
+XCOMM QTDIR	= /usr/lib/qt1
+QTDIR		= /usr/local/qt
+QTINCDIR	= $(QTDIR)/include
+QTLIBDIR	= $(QTDIR)/lib
+MOC		= $(QTDIR)/bin/moc
+

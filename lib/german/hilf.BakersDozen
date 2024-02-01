@@ -1,0 +1,25 @@
+	Die Regeln für Baker's Dozen
+	============================
+
+Man beginnt mit dreizehn Spalten von je vier Karten,
+wobei Könige stets zuunterst liegen. Das Ziel ist, alle
+Karten auf die Zielstapel umzuschichten, von As bis
+König.
+
+Man darf jeweils die oberste Karte einer Spalte (oder
+eines Zielstapels) auf eine Spalte umlegen, bei der die
+oberste Karte um eins höher ist, oder auf den
+entsprechenden Zielstapel. So passt z.B. eine Herz-Fünf
+auf jede Sechs, oder auf die Herz-Vier auf dem
+Zielstapel. Leere Spalten können nicht aufgefüllt werden
+(daher liegen Könige unten, denn sie können nur auf die
+Zielstapel gespielt werden).
+
+Mir gefällt das Spiel, weil es recht schnell ist, mit
+annehmbarer Wahrscheinlichkeit aufgeht, aber nicht
+automatisch ist.
+
+Bei Baker's Dozen kann man die Anzahl der Spalten mit
+der Option -slots vorgeben (2 bis 13). Bei weniger
+Spalten liegen die niedrigeren Karten schon auf den
+Zielstapeln, was das Spiel einfacher macht.

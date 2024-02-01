@@ -1,0 +1,38 @@
+	Die Regeln für Midnight Oil
+	===========================
+
+Midnight Oil wird mit einem Standardblatt von 52 Karten
+gespielt (keine Joker). Zu Beginn werden die Karten
+gemischt und dann in siebzehn Spalten zu je drei Karten
+offen ausgelegt. Die letzte Karte bildet allein die
+achtzehnte Spalte. Diese Spalten werden auch als Fächer
+("fans") bezeichnet.
+
+Ziel des Spiels ist es, alle Karten von den achtzehn
+Fächern zu vier neuen Stapeln umzuschichten. Diese
+Zielstapel bestehen jeweils aus Karten einer Farbe, die
+aufsteigend von As (niedrig) bis König (hoch) angeordnet
+sind; sie werden Fundamente ("foundations") genannt.
+
+Es kann jeweils nur die oberste Karte eines Fächers
+gespielt werden. Man kann sie entweder auf einem
+Fundament ablegen, oder auch auf einem anderen Fächer,
+und zwar absteigend in derselben Farbe. Auf diese Weise
+kann man untenliegende Karten freilegen, um sie auf die
+Fundamente oder andere Fächer zu spielen. Wenn ein
+Fächer abgebaut ist, können dort keine Karten mehr
+abgelegt werden.
+
+Sind keine weiteren Züge möglich -- von Fächer zu
+Fundament oder Fächer zu Fächer --, so können die
+übriggebliebenen Fächerkarten neu gemischt und auf
+dieselbe Weise wie zu Beginn ausgelegt werden (drei
+Karten pro Fächer). Insgesamt kann das Blatt dreimal
+gemischt werden: einmal zu Beginn und noch zweimal
+während des Spiels.
+
+Ein einziges Mal darf man eine untenliegende Karte aus
+einem Fächer nach oben holen; dazu drückt man die Taste
+'b' und klickt auf die betreffende Karte. Es ist im
+allgemeinen am besten, diesen Zug so lange wie möglich
+aufzusparen.

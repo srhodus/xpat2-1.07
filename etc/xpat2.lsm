@@ -1,0 +1,14 @@
+Begin3
+Title:          xpat2 - solitaire card games
+Version:        1.07
+Entered-date:   05NOV00
+Description:    Solitaire card game for X11, implementation of Spider, SeaHaven, FreeCell
+Keywords:       Solitaire, Patience, Spider, Klondike, Canfield, FreeCell, game
+Author:         heiko@colossus.escape.de (Heiko Eissfeldt)
+		Michael.Bischoff@gmx.net (Michael Bischoff)
+Maintained-by:  Michael.Bischoff@gmx.net (Michael Bischoff)
+Primary-site:   sunsite.unc.edu /pub/Linux/games/solitaires
+		512kB xpat2-1.07.tar.gz
+Platforms:      X11, Athena Widgets, Xpm library, Xlib, Xview, Xm, Qt
+Copying-policy: GPL
+End

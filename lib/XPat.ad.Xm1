@@ -1,0 +1,16 @@
+! sample entries to use argv[0] as -rules argument:
+spider*rules:			Spider
+gypsy*rules:			Gypsy
+
+*Tableau.borderWidth:		0
+*Tableau.backingStore:		WhenMapped
+*Tableau.keyboardFile:		keys
+*Tableau.messageFile:		messages
+*Tableau.background:		LightSlateGray
+*Tableau.arrowColor:		Gold
+*Tableau.markColor:		Black
+*Tableau.rules:		        Gypsy
+*Tableau.rng:		        1
+*helptext.rows:			25
+*helptext.columns:		60
+

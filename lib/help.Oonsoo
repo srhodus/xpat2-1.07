@@ -1,0 +1,18 @@
+	The Rules of Oonsoo
+	===================
+
+Although the idea of Oonsoo is quite similar to the idea
+of Spider, it may be a bit confusing in the beginning,
+since in Oonsoo, you have to stack cards of the same
+rank. Oonsoo is played with 48 cards, giving 12 piles of
+4 cards each to build. You may only move cards of suit
+club to empty spaces.  The suits in descending order are
+Clubs, Spades, Hearts, Diamonds.  You may only move
+cards of lower suit onto higher ones, thus the six of
+hearts may be placed upon the six of clubs and on the
+six of spades, but on no other card.
+
+If you are interested in Oonsoo, please try also the
+Oonsoo implementation of Bradford W. Mott
+(bwmott@eos.ncsu.edu), which features special card
+graphics.

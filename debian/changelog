@@ -1,0 +1,142 @@
+xpat2 (1.06-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Joel Rosdahl <joel@debian.org>  Fri, 14 May 1999 19:37:43 +0200
+
+xpat2 (1.04-16) unstable; urgency=low
+
+  * Use the default language (English) when the LANG variable doesn't
+    match an xpat2 language description.  (Fixes bug#30294)
+
+ -- Joel Rosdahl <joel@debian.org>  Thu,  3 Dec 1998 23:35:13 +0100
+
+xpat2 (1.04-15) unstable; urgency=low
+
+  * Applied patch (from Harald Schueler <hs@ILP.Physik.Uni-Essen.DE>) which
+    fixes some bugs in the Spider and Gypsy games.  (Bug#30021)
+
+ -- Joel Rosdahl <joel@debian.org>  Sat, 28 Nov 1998 12:17:55 +0100
+
+xpat2 (1.04-14) unstable; urgency=low
+
+  * Converted to debhelper.
+  * Standards-Version 2.4.1
+
+ -- Joel Rosdahl <joel@debian.org>  Sun, 26 Jul 1998 13:42:57 +0200
+
+xpat2 (1.04-13) unstable; urgency=low
+
+  * Rebuilt to fix some warnings from Lintian about wrong file permissions
+  * Moved back man-page.  :P
+
+ -- Joel Rosdahl <joel@debian.org>  Sun,  8 Mar 1998 22:57:26 +0100
+
+xpat2 (1.04-12) unstable; urgency=low
+
+  * Moved man-page to /usr/X11R6/man
+
+ -- Joel Rosdahl <joel@debian.org>  Sun,  8 Mar 1998 14:36:07 +0100
+
+xpat2 (1.04-11) unstable; urgency=low
+
+  * Rebuilt to fix some warnings from Lintian about wrong file permissions
+  * Standards-Version 2.4.0.0
+
+ -- Joel Rosdahl <joel@debian.org>  Sun,  8 Mar 1998 12:36:47 +0100
+
+xpat2 (1.04-10) unstable; urgency=low
+
+  * Rebuilt with debmake 3.5.8 to fix md5sums
+
+ -- Joel Rosdahl <joel@debian.org>  Wed, 28 Jan 1998 11:08:23 +0100
+
+xpat2 (1.04-9) unstable; urgency=low
+
+  * Patched (ugly) X-gfx2.c to try Cardback1 instead of Cardback2 when the
+    latter fails to load (bugs #8571 and #16980)
+  * Standards-Version: 2.3.0.1
+
+ -- Joel Rosdahl <joel@debian.org>  Fri, 16 Jan 1998 22:14:46 +0100
+
+xpat2 (1.04-8) unstable; urgency=low
+
+  * Corrected a typo (fixes bug #14094)
+  * /usr/doc/xpat2/copyright is not compressed anymore (fixes bug #14467)
+
+ -- Joel Rosdahl <joel@debian.org>  Thu, 11 Dec 1997 12:36:44 +0100
+
+xpat2 (1.04-7) unstable; urgency=low
+
+  * Fixed debian/rules (bug #15540)
+
+ -- Joel Rosdahl <joel@debian.org>  Wed,  3 Dec 1997 21:45:59 +0100
+
+xpat2 (1.04-6) unstable; urgency=low
+
+  * Changed priority from Extra to Optional.
+
+ -- Joel Rosdahl <joel@debian.org>  Wed, 26 Nov 1997 01:07:12 +0100
+
+xpat2 (1.04-5) unstable; urgency=low
+
+  * Recompiled against the the new xlib6 and xpm4 libraries (fixes
+    bugs #12710 and #12922)
+  * Fixed an error in the menu file
+
+ -- Joel Rosdahl <joel@debian.org>  Wed, 24 Sep 1997 16:54:08 +0200
+
+xpat2 (1.04-4) unstable; urgency=low
+
+  * Changed maintainer
+  * Updated to Standards-Version 2.1.2.2
+  * Added entry in Debian's menu system
+  * Added a prerm script (fixes bug #10090)
+  * Updated debian/rules to use debstd (fixes bug #10794)
+
+ -- Joel Rosdahl <joel@debian.org>  Thu, 14 Aug 1997 20:32:29 +0200
+
+xpat2 (1.04-3) unstable; urgency=low
+
+  * Updated to Standards-Version 2.1.0.0.
+
+ -- Sven Rudolph <sr1@inf.tu-dresden.de>  Thu, 24 Oct 1996 14:55:27 +0200
+
+Wed Jul 24 23:33:28 1996  Sven Rudolph  <sr1@inf.tu-dresden.de>
+
+	* debian.rules: added multi-architecture support
+
+	* debian.control: added Section: and Priority:
+
+	* debian.control: corrected extended description (Bug#3659)
+
+Mon Feb 19 22:55:53 1996  Sven Rudolph  <sr1@inf.tu-dresden.de>
+
+	* debian.postinst: fixes permission/ownership for xpat.log
+
+	* converted to ELF
+
+	* upgraded to xpat 1.04
+	
+Mon Aug 28 17:22:18 1995  Sven Rudolph  <sr1@inf.tu-dresden.de>
+
+	* releasing xpat2-1.03-2
+	
+	* src/Xaw-main.c: added temporary change of euid for 
+	                  XtAppInitialize
+
+Tue Aug 15 19:32:31 1995  Sven Rudolph  <sr1@inf.tu-dresden.de>
+
+	* releasing xpat2-1.03-1
+
+	* src/Imakefile : added mkdirhier $(XPATMANDIR)
+
+	* changed file locations according to FSSTND
+
+	* added Debian GNU/Linux package maintenance system files
+	
+
+Local variables:
+mode: debian-changelog
+add-log-mailing-address: "joel@debian.org"
+End:

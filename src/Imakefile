@@ -1,0 +1,270 @@
+XCOMM #########################################################################
+XCOMM ##                                                                    ###
+XCOMM ##  MODULE     : Imakefile                                            ###
+XCOMM ##  LONGNAME   : X-Patience / Imakefile                               ###
+XCOMM ##  AUTHOR     : Christian Anzenberger                                ###
+XCOMM ##  E-MAIL     : christian.anzenberger@siemens.at                     ###
+XCOMM ##  CREATION   : 1999-01-26                                           ###
+XCOMM ##  NOTES      : Multiplatform Version, see table below               ###
+XCOMM ##                                                                    ###
+XCOMM #########################################################################
+XCOMM ##  HISTORY OF CHANGE:                                                ###
+XCOMM ##-------+--------+--------------------------------------------+------###
+XCOMM ## VERS. |  DATE  | CHANGES                                    |AUTHOR###
+XCOMM ##-------+--------+--------------------------------------------+------###
+XCOMM ## 1.00  |19990126| derived from original xpat2-1.04 Imakefile |  ac  ###
+XCOMM ##       |19991106| adapted to xpat2-1.06                      |  ac  ###
+XCOMM ##       |19991108| machine dep. settings moved to Xpat.tmpl   |  ac  ###
+XCOMM #########################################################################
+
+
+XCOMM #########################################################################
+XCOMM ##        Check the settings in this file before running imake        ###
+XCOMM #########################################################################
+#include "Xpat.tmpl"
+
+
+XCOMM #########################################################################
+XCOMM ##        You shouldn't need to change anything below this point      ###
+XCOMM #########################################################################
+#ifdef useXlib
+KIT_OPTION	= -DuseXlib
+#ifdef USE_ROUND_CARDS
+KIT_LIBS	= $(XMULIB) $(XLIB)
+#else
+KIT_LIBS	= $(XLIB)
+#endif
+KIT_OBJS	= Xlib-buttons.o Xlib-main.o Xlib-windows.o Xlib-events.o
+DEPLIBS		= $(DEPXLIB)
+#endif
+
+#ifdef useXaw
+KIT_OPTION	= -DuseXaw
+KIT_LIBS	= XawClientLibs # $(XMULIB) $(XTOOLLIB)
+#ifdef USE_ONLINEHELP
+HELPOBJ		= Xaw-help.o
+#else
+HELPOBJ		= 
+#endif
+KIT_OBJS	= Xaw-main.o $(HELPOBJ)
+DEPLIBS		= XawClientDepLibs
+#endif
+
+#ifdef useXm1
+#define useXm
+KIT_OPTION	= -DuseXm1 -DuseXm
+KIT_LIBS	= $(XMLIB) $(XMULIB) $(XTOOLLIB) $(XLIB)
+#define USE_XPM
+#ifdef USE_ONLINEHELP
+HELPOBJ		= Xm1-help.o
+#else
+HELPOBJ		= 
+#endif
+KIT_OBJS	= Xm1-main.o $(HELPOBJ)
+DEPLIBS		= $(DEPXLIB)
+#endif
+
+#ifdef useXm2
+#define useXm
+KIT_OPTION	= -DuseXm2 -DuseXm
+KIT_LIBS	= $(XMLIB) $(XMULIB) $(XTOOLLIB) $(XLIB)
+#define USE_XPM
+#ifdef USE_ONLINEHELP
+HELPOBJ		= Xm-help.o
+#else
+HELPOBJ		= 
+#endif
+#ifdef GNOMESTYLE
+#define FLAT_BUTTONS
+#endif
+#ifdef KDESTYLE
+#define FLAT_BUTTONS
+#undef GNOMESTYLE
+#endif
+#ifdef FLAT_BUTTONS
+FLATBOBJ	= Xm-tbflatb.o
+#else
+FLATBOBJ	= 
+#endif
+KIT_OBJS	= Xm-main.o Xm-appwin.o Xm-appif.o Xm-file.o $(HELPOBJ) \
+		  Xm-about.o Xm-dialog.o Xm-cbstd.o Xm-cbapp.o $(FLATBOBJ) \
+		  Xm-pixmap.o Xm-args.o Xm-fbres.o Xm-platform.o
+DEPLIBS		= $(DEPXLIB)
+#endif
+
+#ifdef useXview
+KIT_OPTION	= -DuseXview -I$(OWINCDIR)
+KIT_LIBS	= -L$(OWLIBDIR) -lxview $(XMULIB) $(XLIB)
+KIT_OBJS	= Xv-main.o Xv-events.o
+#endif
+
+#ifdef useXQt
+KIT_OPTION	= -DuseXQt -I$(QTINCDIR)
+KIT_LIBS	= -L$(QTLIBDIR) -lqt
+KIT_OBJS	= XQtCards.o XQtCrdPile.o moc_XQtCP.o XQt-main.o \
+		  XQtTableau.o XQtWindow.o moc_XQtT.o moc_XQtW.o \
+		  XQtCrdsDlg.o moc_XQtC.o XQtMarkCrd.o XQtArrows.o \
+		  mqmaskedit.o qmaskedit.o qhelpwin.o mqhelpwin.o
+DEPLIBS		= $(DEPXLIB)
+#endif
+
+
+#ifdef USE_ONLINEHELP
+HELP_OPTION	= -DONLINE_HELP
+#else
+HELP_OPTION	=
+#endif
+
+#ifdef FLAT_BUTTONS
+FLATB_OPTION	= -DFLAT_BUTTONS
+#ifdef GNOMESTYLE
+FLATB_OPTION	= -DFLAT_BUTTONS -DGNOMESTYLE
+#endif
+#ifdef KDESTYLE
+FLATB_OPTION	= -DFLAT_BUTTONS -DKDESTYLE
+#endif
+#else
+FLATB_OPTION	=
+#endif
+
+#ifdef USE_ROUND_CARDS
+ROUND_OPTION	= 
+#else
+ROUND_OPTION	= -DNO_ROUND_CARDS
+#endif
+
+#ifdef USE_SOUND
+SOUND_OPTION	= -DSOUND
+#ifndef SOUNDOBJ
+SOUNDOBJ	= X-sound_SUN.o
+#endif
+#else
+SOUND_OPTION	=
+SOUNDOBJ	=
+#endif
+
+#ifdef USE_CARD_CONSTRUCTION
+GFXOBJ		= X-gfx2.o
+GFX_OPTION	= -DGFX2
+#define USE_XPM
+#else
+GFXOBJ		= X-gfx1.o
+GFX_OPTION	= -DGFX1
+#endif
+
+#ifdef USE_LOADCARDS
+LOAD_OPTION	= -DLOADCARDS
+#else
+LOAD_OPTION	=
+#endif
+
+#ifdef USE_XPM
+XPM_OPTION	= $(XPMINCLUDE)
+#else
+XPM_OPTION	= -DNO_XPM
+XPM_LIB		=
+#endif
+
+
+LOCAL_LIBRARIES	= $(XPMLIB) $(KIT_LIBS) $(SOUNDLIB)
+
+VER=1.06
+
+XCOMM #########################################################################
+XCOMM ##     Rules                                                          ###
+XCOMM #########################################################################
+
+#ifdef useXQt
+XOBJS		=
+#else
+XOBJS		= X-events.o X-layout.o X-expose.o X-cards.o \
+		  X-markcard.o X-arrows.o X-widget.o $(GFXOBJ)
+#endif
+
+STDOBJS		= rules.o commands.o messages.o hints.o layout.o \
+		  arrows.o loadsave.o util.o moves.o $(SOUNDOBJ) \
+		  r_Klondike.o r_Spider.o r_Delight.o r_MonteCarlo.o \
+		  r_Midnight.o r_Gypsy.o r_Seahaven.o r_FreeCell.o \
+		  r_Calculatio.o r_Michaels.o r_Royal.o r_Canfield.o \
+		  r_mdCanfield.o r_Bakers.o r_Oonsoo.o r_BlueMoon.o
+
+OBJS		= $(STDOBJS) $(XOBJS) $(KIT_OBJS)
+
+
+MYPROG		= xpat2
+LANGUAGES	= italian german russian french de_DE fr_FR it_IT
+DEFINES		= $(LOAD_OPTION) $(HELP_OPTION) $(KIT_OPTION) $(ROUND_OPTION) \
+		  $(SOUND_OPTION) $(XPM_OPTION) $(GFX_OPTION) \
+		  -DSCOREFILE=\"$(SCOREFILE)\" -DLIBDIR=\"$(XPATLIBDIR)\"
+
+XCOMM Dependencies:
+XCOMM *.c  require  version.h xpat.h xpatgame.h
+XCOMM X*.c additionally require X-pat.h and Tableau.h
+XCOMM X-widget.c additionally requires TableauP.h
+
+all::		$(MYPROG)
+
+install::	$(MYPROGS)
+	mkdirhier $(XPATLIBDIR)
+	chmod 755 $(XPATLIBDIR)
+	for f in $(LANGUAGES); do \
+	  mkdirhier $(APPDEFSDIR)/$$f/app-defaults; \
+	  cp ../lib/$$f/XPat $(APPDEFSDIR)/$$f/app-defaults; \
+	  chmod 755 $(APPDEFSDIR)/$$f/app-defaults; \
+	  chmod 644 $(APPDEFSDIR)/$$f/app-defaults/XPat; \
+	done 
+	(cd ../lib; tar cf - * | (cd $(XPATLIBDIR); tar xf -))
+	chown -R root $(XPATLIBDIR)
+	chmod -R a+r $(XPATLIBDIR)
+	for f in $(LANGUAGES); do \
+	    chmod 755 $(XPATLIBDIR)/$$f; \
+	done
+	mkdirhier $(XPATMANDIR)
+	cp xpat2.man $(XPATMANDIR)/xpat2.6x
+	chmod 644 $(XPATMANDIR)/xpat2.6x
+
+ComplexProgramTarget($(MYPROG))
+InstallAppDefaults(XPat)
+
+install.fsstnd:
+	$(MAKE) install
+	mkdirhier /usr/games/bin
+	chmod 755 /usr/games/bin
+	mv $(BINDIR)/xpat2 /usr/games/bin
+
+install.local:	$(MYPROGS)
+	mkdirhier $(LXPATBINDIR) $(LXPATMANDIR) $(XPATLIBDIR) \
+		$(LAPPDEFSDIR)/app-defaults
+	chmod 755 $(XPATLIBDIR) $(LXPATMANDIR) $(LAPPDEFSDIR)/app-defaults
+	for f in $(LANGUAGES); do \
+	  mkdirhier $(LAPPDEFSDIR)/$$f/app-defaults; \
+	  cp ../lib/$$f/XPat $(LAPPDEFSDIR)/$$f/app-defaults; \
+	  chmod 755 $(LAPPDEFSDIR)/$$f/app-defaults; \
+	  chmod 644 $(LAPPDEFSDIR)/$$f/app-defaults/XPat; \
+	done 
+	cp XPat.ad $(LAPPDEFSDIR)/app-defaults/XPat
+	chmod 755 $(LAPPDEFSDIR)/app-defaults/XPat
+	(cd ../lib; tar cf - * | (cd $(XPATLIBDIR); tar xf -))
+	chmod -R a+r $(XPATLIBDIR)
+	for f in $(LANGUAGES); do \
+	    chmod 755 $(XPATLIBDIR)/$$f; \
+	done
+	cp xpat2 $(LXPATBINDIR)
+	chmod 755 $(LXPATBINDIR)/xpat2
+	cp xpat2.man $(LXPATMANDIR)/xpat2.6x
+	chmod 644 $(LXPATMANDIR)/xpat2.6x
+
+
+XCOMM Dependecies for the Qt interface:
+moc_XQtCP.cpp:	XQtCardPile.h
+		$(MOC) -o moc_XQtCP.cpp XQtCardPile.h
+moc_XQtT.cpp:	XQtTableau.h
+		$(MOC) -o moc_XQtT.cpp XQtTableau.h
+moc_XQtW.cpp:	XQtWindow.h
+		$(MOC) -o moc_XQtW.cpp XQtWindow.h
+mqmaskedit.cpp:	qmaskedit.h
+		$(MOC) -o mqmaskedit.cpp qmaskedit.h
+mqhelpwin.cpp:	qhelpwin.h
+		$(MOC) -o mqhelpwin.cpp qhelpwin.h
+moc_XQtC.cpp:	XQtCards.h
+		$(MOC) -o moc_XQtC.cpp XQtCards.h

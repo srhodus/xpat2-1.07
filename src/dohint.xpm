@@ -1,0 +1,23 @@
+/* XPM */
+static const char * pic_dohint[] = {
+/* width height num_colors chars_per_pixel */
+"     6    14        2            1",
+/* colors */
+". c #000000",
+"b c #c0c0c0",
+/* pixels */
+"bbbbbb",
+"bbbbbb",
+"bb..bb",
+"bb..bb",
+"bb..bb",
+"bb..bb",
+"bb..bb",
+"bb..bb",
+"bb..bb",
+"bb..bb",
+"bbbbbb",
+"bb..bb",
+"bbbbbb",
+"bbbbbb"
+};

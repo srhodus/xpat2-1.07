@@ -1,0 +1,35 @@
+/* XPM */
+static char * Hint_m_pm[] = {
+/* width height ncolors cpp [x_hot y_hot] */
+"24 24 5 1 0 0",
+/* colors */
+" 	s iconColor5	m black	c blue",
+".	s iconColor2	m white	c white",
+"X	s iconColor3	m black	c red",
+"o	s iconColor1	m black	c black",
+"O	s iconColor8	m black	c magenta",
+/* pixels */
+"                        ",
+"                        ",
+"    .........           ",
+"   ..X.....X..          ",
+"   .XXX...XXX.o         ",
+"   ..X.....X..o         ",
+"   .....X.....o         ",
+"   ....XXX....OOOOOO    ",
+"   .....X....OOOOOOOO   ",
+"   ..X.....XOOOo   OOO  ",
+"   .XXX...XXOOo     OOo ",
+"   ..X.....X.oo     OOo ",
+"   ...........o    OOOo ",
+"   ...........o   OOOo  ",
+"   ...........o  OOOo   ",
+"   ..X.....X..o OOOo    ",
+"   .XXX...XXX.o OOo     ",
+"   ..X.....X..o OOo     ",
+"    .........o   oo     ",
+"     oooooooo   OO      ",
+"                OOo     ",
+"                 oo     ",
+"                        ",
+"                        "};

@@ -1,0 +1,1 @@
+?package(xpat2):needs=x11 section="Games/Card" title="Xpatience" command="xpat2"

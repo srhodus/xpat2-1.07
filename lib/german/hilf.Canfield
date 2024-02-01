@@ -1,0 +1,58 @@
+	Die Regeln für Canfield
+	=======================
+
+Canfield wird mit einem Standardblatt von 52 Karten
+gespielt. Es sind vier Zielstapel jeweils einer Farbe
+aufzubauen, und zwar aufsteigend von einem Basiswert.
+Mit einer Sieben als Basis wären die Zielfolgen z.B.
+7,8,9,10,B,D,K,A,2,3,4,5,6.
+
+Zu Beginn wird eine Karte gezogen, die den Basiswert
+vorgibt, und auf den Zielstapel ihrer Farbe hochgelegt.
+Ferner wird je eine Karte in die vier Spalten unterhalb
+der Zielstapel gegeben, und es wird ein Zusatzstapel von
+dreizehn Karten aufgelegt. Weitere drei Karten kommen
+auf den Ablagestapel, der Rest bildet den Talon.
+
+Auf den Spalten kann absteigend angelegt werden, wobei
+Rot und Schwarz abwechseln (es gilt die Reihenfolge, die
+durch die Basis vorgegeben ist). Gespielt werden können
+die obersten Karten der Spalten sowie des Zusatz- und
+des Ablagestapels. Diese Karten dürfen auch auf die
+Zielstapel hochgelegt werden. Eine ganze Spalte kann als
+Einheit bewegt werden; es ist jedoch nicht möglich, eine
+Teilspalte abzutrennen.
+
+Auf eine leere Spalte darf nur eine Karte vom
+Zusatzstapel gelegt werden. Ist dieser erschöpft, so
+werden leere Spalten aus dem Ablagestapel gefüllt; man
+darf sie offen lassen, bis man sie benutzen möchte.
+
+Vom Talon werden jeweils drei Karten auf den
+Ablagestapel gegeben. Ist der Talon durchgespielt, so
+kann man den Ablagestapel umdrehen und mit diesem neuen
+Talon weiterspielen.
+
+Punktwertung:
+
+In der offiziellen Version des Spiels kostet das
+anfängliche Tableau $13. Man kann zu diesem Zeitpunkt
+aufhören oder das Spiel inspizieren. Die Inspektion
+kostet weitere $13 und erlaubt es, beliebig viele Züge
+zu machen, ohne Karten vom Talon zu geben. (Sind die
+drei Karten aufgebraucht, die zu Beginn auf dem
+Ablagestapel liegen, so können drei weitere genommen
+werden.)
+
+Wenn schließlich das Spiel interessant aussieht, bezahlt
+man die letzte Rate von $26 sowie $5 für jede Karte, die
+bereits auf einem Zielstapel liegt. Im weiteren Verlauf
+des Spiels erhält man dann $5 für jede Karte, die auf
+einen Zielstapel gelegt wird. Jedes Umdrehen des
+Ablagestapels kostet $5.
+
+Bei XPat werden diese Regeln nicht ganz streng
+eingehalten: Man bezahlt den vollen Betrag von $52
+gleich zu Beginn. Das ergibt eine Höchstwertung von
+$208, wenn man mit einem Durchgang auskommt (d.h. ohne
+Umdrehen), was sehr selten sein dürfte.

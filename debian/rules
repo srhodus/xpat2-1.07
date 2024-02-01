@@ -1,0 +1,65 @@
+#!/usr/bin/make -f
+
+#export DH_VERBOSE=1
+
+build:
+	dh_testdir
+	$(MAKE) XPATLIBDIR=/usr/lib/games/xpat \
+	  SCOREFILE=/var/lib/games/xpat2/xpat.log
+	touch build-stamp
+
+clean:
+	dh_testdir
+	dh_testroot
+	-rm -f build-stamp
+	-$(MAKE) -i clean
+	dh_clean
+
+# Build architecture-independent files here.
+binary-indep: build
+# We have nothing to do by default.
+
+# Build architecture-dependent files here.
+binary-arch: build
+#	dh_testversion
+	dh_testdir
+	dh_testroot
+	dh_clean -k
+	dh_installdirs
+
+	$(MAKE) BINDIR=../debian/tmp/usr/games \
+	  LIBDIR=../debian/tmp/usr/X11R6/lib/X11 \
+	  XPATLIBDIR=../debian/tmp/usr/lib/games/xpat \
+	  XPATMANDIR=../debian/tmp/usr/man/man6 \
+	  prefix=../debian/tmp/usr install
+
+	dh_installdocs
+	dh_installexamples
+	dh_installmenu
+#	dh_installinit
+	dh_installcron
+	dh_installmanpages
+#	dh_undocumented
+	dh_installchangelogs
+	dh_strip
+	dh_compress
+	dh_fixperms
+
+	chown -R root.games debian/tmp/var/lib/games/xpat2
+	chown root.games debian/tmp/usr/games/xpat2
+	chmod 2775 debian/tmp/var/lib/games/xpat2
+	chmod 2755 debian/tmp/usr/games/xpat2
+
+	dh_suidregister
+	dh_installdeb
+	dh_shlibdeps
+	dh_gencontrol
+#	dh_makeshlibs
+	dh_md5sums
+	dh_builddeb
+
+source diff:
+	@echo >&2 'source and diff are obsolete - use dpkg-source -b'; false
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary

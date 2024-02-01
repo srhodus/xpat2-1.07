@@ -1,0 +1,31 @@
+	The Rules Of Blue Moon
+	======================
+
+Blue Moon uses a standard 52-card deck (no jokers).
+To begin the game the deck is shuffled, then dealt
+face-up, one card at a time, into four rows of
+thirteen cards each (using all the cards).
+Then, the aces are moved to the left of the rows,
+one on every row, creating a tableau of fourteen
+by four cards with four randomly placed empty
+spaces.
+
+The object of the game is to build a sequence of
+cards on the aces, in ascending order.  This is
+done by moving cards to empty slots.  A card may
+only be moved into an empty space if it's the same
+suit as, and the next in rank of the card immediately
+left of the space.  (This means no cards may be
+placed to the right of a king.)
+
+When the game is stuck, the cards that aren't in
+a sequence built from an ace can be removed,
+reshuffled and then played onto the tableau again,
+leaving an empty space to the right of each existing
+sequence, making fourteen spaces on each row again.
+
+The game is won if all four sequences are completed.
+The scoring is simple: two points for each card that
+is connected to a sequence, and an extra point for
+each complete sequence, making a total of a hundred
+points, and a deduction of ten points for every deal.

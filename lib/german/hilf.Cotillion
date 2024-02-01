@@ -1,0 +1,38 @@
+	Die Regeln für Royal Cotillion
+	==============================
+
+Royal Cotillion wird mit zweimal 52 Karten gespielt
+(keine Joker). Zu Beginn werden links drei Stöße zu je
+drei Karten aufgelegt. Links oben befinden sich auch der
+Talon und ein Ablagestapel. Die rechte Seite des
+Tableaus besteht aus zwölf einzelnen Karten in drei
+Spalten zu je vier Karten.
+
+In den mittleren beiden Spalten werden die Zielstapel
+aufgebaut. Für jede Farbe gibt es zwei Folgen:
+
+	A,3,5,7,9,B,K,2,4,6,8,10,D
+	2,4,6,8,10,D,A,3,5,7,9,B,K
+
+Von den drei Stößen auf der linken Seite darf jeweils
+nur die oberste Karte genommen werden, und die Stöße
+werden nicht wieder aufgefüllt. Auf der rechten Seite
+können alle Karten gespielt werden; sie werden aus dem
+Ablagestapel oder, wenn dieser leer ist, aus dem Talon
+nachgefüllt.
+
+Die Karten des Talon werden nacheinander aufgedeckt und
+können entweder auf einen der Zielstapel oder den
+Ablagestapel gelegt werden. Auch die oberste Karte des
+Ablagestapels kann stets gespielt werden.
+
+Das Spiel ist gewonnen, wenn alle acht Zielstapel
+vollständig sind, und verloren, wenn kein Zug mehr
+möglich ist.
+
+Falls man die Wahl hat, ist es ratsam, die Karten der
+linken Seite zuerst zu spielen, um so zusätzliche Karten
+freizulegen. Auf der rechten Seite sollte man einen Zug
+nicht nur deshalb machen, weil er gerade möglich ist;
+man wartet besser, bis auf dem Ablagestapel eine Karte
+auftaucht, die man gerne sichern möchte.

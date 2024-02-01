@@ -1,0 +1,31 @@
+	Die Regeln für Klondike
+	=======================
+
+Klondike ist eine traditionelle Patience, die mit einem
+einzigen Blatt von 52 Karten gespielt wird. Es gibt vier
+Zielstapel und sieben Spalten. Zu Beginn enthält die
+erste Spalte eine Karte, die zweite zwei Karten, und so
+weiter bis zur siebten Spalte mit sieben Karten. Bei
+jeder Spalte ist jeweils nur die oberste Karte
+aufgedeckt.
+
+Ferner gibt es neben dem Talon noch einen Ablagestapel
+mit aufgedeckten Karten. Wenn eine Karte vom Talon
+abgehoben wird, kommt sie auf den Ablagestapel. Man kann
+eine Karte vom Ablagestapel auf die Spalten oder die
+Zielstapel spielen, aber niemals eine Karte auf den
+Ablagestapel zurücklegen.
+
+Die Regeln, nach denen Karten angelegt werden können,
+entsprechen denen von Gypsy [siehe dort]: In den Spalten
+werden absteigende Folgen von abwechselnd roten und
+schwarzen Karten aufgebaut, und solche Gruppen können
+auch als Block bewegt werden. Der einzige Unterschied zu
+Gypsy ist, dass man auf eine leere Spalte nur einen
+König legen darf. In die Zielstapel kommen Karten einer
+Farbe in aufsteigender Folge, von As bis König.
+
+Wenn alle Karten vom Talon abgehoben wurden, kann man
+den Ablagestapel umdrehen und mit diesem neuen Talon
+weitermachen. Der Ablagestapel kann bis zu drei Mal
+umgedreht werden.

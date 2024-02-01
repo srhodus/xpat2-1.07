@@ -1,0 +1,9 @@
+#!/bin/sh
+# convert pysol cardimage into xpat2 xpm file
+# argument 1 = directory of source file
+# argument 2 = card rank
+# argument 3 = corresponding xpat name
+giftopnm $1/$2c.gif | ppmtoxpm > $3.Clubs.pic.xpm
+giftopnm $1/$2s.gif | ppmtoxpm > $3.Spades.pic.xpm
+giftopnm $1/$2h.gif | ppmtoxpm > $3.Hearts.pic.xpm
+giftopnm $1/$2d.gif | ppmtoxpm > $3.Diamonds.pic.xpm

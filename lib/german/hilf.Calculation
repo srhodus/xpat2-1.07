@@ -1,0 +1,38 @@
+	Die Regeln für Calculation
+	===========================
+
+Für Calculation wird ein normales Spiel zu 52 Karten
+benutzt. Zu Beginn werden die Karten gemischt, und es
+werden ein As, eine Zwei, eine Drei und eine Vier als
+Grundlagen für die Zielstapel herausgenommen.
+
+Diese Zielstapel werden wie folgt aufgebaut, wobei die
+Farben keine Rolle spielen:
+
+            A,2,3,4,5,6,7,8,9,10,B,D,K
+            2,4,6,8,10,D,A,3,5,7,9,B,K
+            3,6,9,D,2,5,8,B,A,4,7,10,K
+            4,8,D,3,7,B,2,6,10,A,5,9,K
+
+Die Karten des Talons werden nacheinander aufgedeckt und
+können auf einen der Zielstapel oder einen der vier
+Hilfsstapel darunter gelegt werden. Die obersten Karten
+der Hilfsstapel können jederzeit auf einen der
+Zielstapel gelegt werden; es ist jedoch nicht möglich,
+Karten von einem Hilfsstapel auf einen anderen zu
+spielen.
+
+Das Spiel ist gewonnen, wenn man alle Zielstapel bis zum
+König aufgebaut hat.
+
+Die Geschicklichkeit bei Calculation (abgesehen davon,
+sich zu merken, welche Karte als nächste auf jeden
+Stapel gehört) besteht darin, dass man Karten, die man
+demnächst braucht, nicht mit anderen bedeckt, die man
+eine Weile nicht verwenden kann. Könige sind besonders
+lästig, da man sie erst spielen kann, wenn ein
+Zielstapel ganz aufgebaut ist.
+
+Die allgemeine Strategie besteht darin, die Hilfsstapel
+in absteigender Folge aufzubauen, aber die Karten sind
+selten so freundlich, das in großem Umfang zu erlauben.

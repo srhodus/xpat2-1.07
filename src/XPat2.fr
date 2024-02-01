@@ -1,0 +1,212 @@
+! Application Defaults for XPat2 (francais)
+! Christian Anzenberger 1999 03 21
+
+
+XPat.AboutText:	\
+	-*-lucida sans-medium-r-normal-sans-14-*-*-*-*-*-*-*=Regular,\
+	-*-new century schoolbook-bold-i-normal--18-*-*-*-*-*-*-*=BoldItalic
+
+! shellMain
+XPat.title:					X-Patience
+XPat.baseWidth:					640
+XPat.baseHeight:				480
+XPat.minWidth:					320
+XPat.minHeight:					240
+XPat.iconMask:					xpat2.icon.bm
+XPat.iconPixmap:				xpat2.icon.pm
+
+! cascadeGame
+XPat*cascadeGame.labelString:			Partie
+
+! butGameNew
+XPat*butGameNew.labelString:			Nouvelle Partie
+
+! butGameLoad
+XPat*butGameLoad.labelString:			Load Partie ...
+
+! butGameSave
+XPat*butGameSave.labelString:			Sauvegarder Partie ...
+
+! butGameExit
+XPat*butGameExit.labelString:			Quitter
+
+! cascadeRules
+XPat*cascadeRules.labelString:			Règles
+
+! cascadeActions
+XPat*cascadeActions.labelString:		Actions
+
+! butActionsUndo
+XPat*butActionsUndo.labelString:		Annuler
+
+! butActionsRedo
+XPat*butActionsRedo.labelString:		Réitérer
+
+! butActionsReplay
+XPat*butActionsReplay.labelString:		Rejouer
+
+! butActionsRestart
+XPat*butActionsRestart.labelString:		Recommencer
+
+! butActionsCards
+XPat*butActionsCards.labelString:		Cartes
+
+! butActionsMovetostack
+XPat*butActionsMovetostack.labelString:		Mettre au dépôt
+
+! cascadeOptions
+XPat*cascadeOptions.labelString:		Options
+
+! toggleOptionsSound
+XPat*toggleOptionsSound.labelString:		Son On
+
+! toggleOptionsToolbar
+XPat*toggleOptionsToolbar.labelString:		Show Toolbar
+
+! butOptionsDropbookmark
+XPat*butOptionsDropbookmark.labelString:	Poser une marque
+
+! butOptionsGotobookmark
+XPat*butOptionsGotobookmark.labelString:	Revenir la marque
+
+! cascadeHelp
+XPat*cascadeHelp.labelString:			Aide
+
+! cascadeHelpRules
+XPat*cascadeHelpRules.labelString:		Aide on Règles
+
+! butHelpKeys
+XPat*butHelpKeys.labelString:			Aide on Keys ...
+
+! butHelpHint
+XPat*butHelpHint.labelString:			Indice
+
+! butHelpScore
+XPat*butHelpScore.labelString:			Score ...
+
+! butHelpLicense
+XPat*butHelpLicense.labelString:		License ...
+
+! butHelpAbout
+XPat*butHelpAbout.labelString:			About ...
+
+! butTbCards
+XPat*butTbCards.labelType:			PIXMAP
+XPat*butTbCards.labelPixmap:			DealCard.m.pm
+
+! butTbUndo
+XPat*butTbUndo.labelType:			PIXMAP
+XPat*butTbUndo.labelPixmap:			Undo.m.pm
+XPat*butTbUndo.labelInsensitivePixmap:		UndoU.m.pm
+
+! butTbRedo
+XPat*butTbRedo.labelType:			PIXMAP
+XPat*butTbRedo.labelPixmap:			Redo.m.pm
+XPat*butTbRedo.labelInsensitivePixmap:		RedoU.m.pm
+
+! butTbReplay
+XPat*butTbReplay.labelType:			PIXMAP
+XPat*butTbReplay.labelPixmap:			Replay.m.pm
+XPat*butTbReplay.labelInsensitivePixmap:	ReplayU.m.pm
+
+! butTbRestart
+XPat*butTbRestart.labelType:			PIXMAP
+XPat*butTbRestart.labelPixmap:			Restart.m.pm
+XPat*butTbRestart.labelInsensitivePixmap:	RestartU.m.pm
+
+! butTbMovetostack
+XPat*butTbMovetostack.labelType:		PIXMAP
+XPat*butTbMovetostack.labelPixmap:		ToStack.m.pm
+
+! butTbHint
+XPat*butTbHint.labelType:			PIXMAP
+XPat*butTbHint.labelPixmap:			Hint.m.pm
+
+
+! drawpane
+XPat*drawpane.background:			DarkOliveGreen4
+XPat*drawpane.marginWidth:			320
+XPat*drawpane.marginHeight:			200
+
+
+! shellDialogFile
+XPat*shellDialogFile.title:			Load Game
+
+! fileselDialogFile
+XPat*fileselDialogFile.noMatchString:		No saved games.
+
+! labelFileFiles
+XPat*fileselDialogFile.Items.labelString:	Files
+
+! labelFileFilter
+XPat*fileselDialogFile.FilterLabel.labelString:	Filter
+
+! labelFileDirs
+XPat*fileselDialogFile.Dir.labelString:		Directories
+
+! optmenuFileSetfilter
+XPat*optmenuFileSetfilter.labelString:		Show Saved Games:
+
+! butFileSetfilterAll
+XPat*butFileSetfilterAll.labelString:		All Games
+
+
+! shellDialogHelp
+XPat*shellDialogHelp.baseWidth:			440
+XPat*shellDialogHelp.baseHeight:		440
+XPat*shellDialogHelp.minWidth:			200
+XPat*shellDialogHelp.minHeight:			200
+
+! msgboxHelp
+XPat*shellDialogHelpText.title:			Help 
+
+! butHelpClose
+XPat*butHelpTextClose.labelString:		Close
+
+
+! shellDialogHelpAbout
+XPat*shellDialogHelpAbout.title:		About X-Patience
+
+! labelHelpAboutSymbol
+XPat*labelHelpAboutSymbol.labelType:		PIXMAP
+XPat*labelHelpAboutSymbol.labelPixmap:		Xpat2.l.pm
+
+! labelHelpAboutSymbolB
+XPat*labelHelpAboutSymbolB.labelType:		PIXMAP
+XPat*labelHelpAboutSymbolB.labelPixmap:		Xpat2B.l.pm
+
+! labelHelpAboutText
+
+! labelHelpAboutVersion
+XPat*labelHelpAboutVersion.mappedWhenManaged:	false
+XPat*labelHelpAboutVersion.labelString:		X-Patience 2\nVersion 1.04.M\n(Alpha Motif GUI)\nfor Solaris 2.x
+
+! labelHelpAboutAuthors
+XPat*labelHelpAboutAuthors.mappedWhenManaged:	false
+XPat*labelHelpAboutAuthors.labelString:		Game written by Heiko Eissfeldt and\nMichael Bischoff (c) 1993, 1994.\nMotif GUI designed and created by\nChristian Anzenberger (c) 1999.\nSee COPYRIGHT files for details.
+
+! butHelpAboutVersion
+XPat*butHelpAboutVersion.labelString:		Version
+
+! butHelpAboutAuthors
+XPat*butHelpAboutAuthors.labelString:		Authors
+
+! butHelpAboutClose
+XPat*butHelpAboutClose.labelString:		Close
+
+
+! shellDialogConfirm
+XPat*shellDialogConfirm.title:			 
+
+! labelConfirmText
+XPat*msgboxConfirm.MessageLabel.labelString:	Quitter X-Patience?
+
+
+! shellDialogError
+XPat*shellDialogError.title:			 
+
+! butErrorCancel
+XPat*msgboxError.Cancel.labelString:		Dismiss
+
+! labelErrorText
+XPat*msgboxError.MessageLabel.labelString:	Please select a saved game

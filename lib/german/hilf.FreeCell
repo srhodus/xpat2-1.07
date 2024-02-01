@@ -1,0 +1,22 @@
+	Die Regeln für Free Cell
+	========================
+
+Diese Variante wurde dem Spiel unter Microsoft Windows
+nachempfunden. Das Spiel ist einfach zu verstehen, wenn
+man Gypsy kennt [siehe dort], denn die Regeln für das
+Anlegen von Karten sind dieselben.
+
+Free Cell wird mit einem einzigen Blatt von 52 Karten
+gespielt. Es gibt acht Spalten, vier sogenannte Register
+und vier Zielstapel. Register sind ein neuer Typ von
+Stapel: In einem Register kann jeweils nur eine Karte
+abgelegt werden, die aber beliebig sein kann.
+
+Diese Regel gleicht die Tatsache aus, dass alle Karten
+bereits zu Beginn gegeben werden, was es schwer macht,
+eine freie Spalte zu bekommen. Die Karten, die anfangs
+gegeben werden, bilden oft keine gültigen Gruppen. Man
+muss sie umordnen, indem man die Register zu Hilfe
+nimmt. Um eine freie Spalte zu erhalten, muss man
+Gruppen von Karten bilden, bei denen Rot und Schwarz
+abwechselt und die Werte abnehmen.

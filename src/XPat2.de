@@ -1,0 +1,124 @@
+! Voreinstellungen für XPat2 (deutsch)
+! Christian Anzenberger 1999 03 21
+
+XPat.AboutText:	-*-lucida sans-medium-r-normal-sans-14-*-*-*-*-*-*-*=FontRegular,-*-new century schoolbook-bold-i-normal--18-*-*-*-*-*-*-*=FontBoldItalic
+
+! Main Window
+XPat.title:					X-Patience
+XPat.baseWidth:					585
+XPat.baseHeight:				505
+XPat.minWidth:					320
+XPat.minHeight:					240
+!XPat.iconPixmap:				Xpat2.icon.pm
+
+! Anmerkung: Die nachfolgenden Einstellungen sind nicht erforderlich, wenn
+!            der Session Manager Default-Resourcen für Motif-Anwendungen zur
+!            Verfügung stellt. Für CDE und KDE ab 1.1 ist dies gegeben.
+!! XPat*background:				grey
+!! XPat*fontList:		-adobe-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*
+
+! Pulldown Menus
+XPat*cascadeGame.labelString:			Spiel
+XPat*butGameNew.labelString:			Neues Spiel
+XPat*butGameLoad.labelString:			Spiel laden ...
+XPat*butGameSave.labelString:			Spiel speichern ...
+XPat*butGameExit.labelString:			Ende
+!
+XPat*cascadeRules.labelString:			Regeln
+!
+XPat*cascadeActions.labelString:		Aktionen
+XPat*butActionsUndo.labelString:		Zurücknehmen
+XPat*butActionsRedo.labelString:		Wiederherstellen
+XPat*butActionsReplay.labelString:		Abspielen
+XPat*butActionsRestart.labelString:		Neustart
+XPat*butActionsCards.labelString:		Karten geben
+XPat*butActionsMovetostack.labelString:		Karten ablegen
+!
+XPat*cascadeOptions.labelString:		Optionen
+XPat*toggleOptionsSound.labelString:		Klänge
+XPat*toggleOptionsToolbar.labelString:		Werkzeugleiste
+XPat*butOptionsDropbookmark.labelString:	Setze Merker
+XPat*butOptionsGotobookmark.labelString:	Gehe zu Merker
+!
+XPat*cascadeHelp.labelString:			Hilfe
+XPat*cascadeHelpRules.labelString:		Hilfe über Regeln
+XPat*butHelpKeys.labelString:			Hilfe über Tasten ...
+XPat*butHelpHint.labelString:			Hinweis
+XPat*butHelpScore.labelString:			Spielstand ...
+XPat*butHelpLicense.labelString:		Lizenz ...
+XPat*butHelpAbout.labelString:			Über ...
+
+! Toolbar
+XPat*butTbCards.labelType:			PIXMAP
+XPat*butTbCards.labelPixmap:			DealCard.m.pm
+XPat*butTbUndo.labelType:			PIXMAP
+XPat*butTbUndo.labelPixmap:			UndoU.m.pm
+XPat*butTbUndo.labelInsensitivePixmap:		UndoU.m.pm
+XPat*butTbRedo.labelType:			PIXMAP
+XPat*butTbRedo.labelPixmap:			RedoU.m.pm
+XPat*butTbRedo.labelInsensitivePixmap:		RedoU.m.pm
+XPat*butTbReplay.labelType:			PIXMAP
+XPat*butTbReplay.labelPixmap:			Replay.m.pm
+XPat*butTbReplay.labelInsensitivePixmap:	ReplayU.m.pm
+XPat*butTbRestart.labelType:			PIXMAP
+XPat*butTbRestart.labelPixmap:			Restart.m.pm
+XPat*butTbRestart.labelInsensitivePixmap:	RestartU.m.pm
+XPat*butTbMovetostack.labelType:		PIXMAP
+XPat*butTbMovetostack.labelPixmap:		ToStack.m.pm
+XPat*butTbHint.labelType:			PIXMAP
+XPat*butTbHint.labelPixmap:			Hint.m.pm
+
+! Tableau
+XPat*Tableau.background:			DarkOliveGreen4
+XPat*Tableau.marginWidth:			320
+XPat*Tableau.marginHeight:			200
+
+
+! File Dialog
+XPat*shellDialogFile.title:			Spiel laden
+XPat*fileselDialogFile.noMatchString:		Keine Spiele gespeichert.
+XPat*fileselDialogFile.Items.labelString:	Dateien
+XPat*fileselDialogFile.FilterLabel.labelString:	Filter
+XPat*fileselDialogFile.Dir.labelString:		Verzeichnisse
+XPat*optmenuFileSetfilter.labelString:		Zeige Spiele vom Typ:
+XPat*butFileSetfilterAll.labelString:		Alle Spiele
+
+
+! Help Dialog
+XPat*shellDialogHelp.baseWidth:			440
+XPat*shellDialogHelp.baseHeight:		440
+XPat*shellDialogHelp.minWidth:			200
+XPat*shellDialogHelp.minHeight:			200
+XPat*shellDialogHelpText.title:			Hilfe 
+XPat*butHelpTextClose.labelString:		Schließen
+
+
+! About Dialog
+XPat*shellDialogHelpAbout.title:		Über X-Patience
+XPat*labelHelpAboutSymbol.labelType:		PIXMAP
+XPat*labelHelpAboutSymbol.labelPixmap:		Xpat2B.l.pm
+XPat*labelHelpAboutSymbolB.labelType:		PIXMAP
+XPat*labelHelpAboutSymbolB.labelPixmap:		Xpat2.l.pm
+XPat*labelHelpAboutVersion.labelString:		X-Patience 2\n\
+Version 1.06\n\
+(Motif Oberfläche)\n\
+für Linux 2.x
+XPat*labelHelpAboutAuthors.labelString:		Spiel geschrieben von Heiko Eissfeldt\n\
+und Michael Bischoff (c) 1993, 1999.\n\
+Motif Oberfläche entworfen und erstellt\n\
+von Christian Anzenberger (c) 1999.\n\
+Für Details siehe COPYRIGHT Dateien.
+XPat*butHelpAboutVersion.labelString:		Version
+XPat*butHelpAboutAuthors.labelString:		Autoren
+XPat*butHelpAboutClose.labelString:		Schließen
+
+
+! Confirm Dialog
+XPat*shellDialogConfirm.title:			 
+XPat*msgboxConfirm.MessageLabel.labelString:	X-Patience beenden?
+
+
+! Error Dialog
+XPat*shellDialogError.title:			 
+XPat*msgboxError.Cancel.labelString:		Schließen
+XPat*msgboxError.MessageLabel.labelString:	Wähle ein gespeichertes Spiel

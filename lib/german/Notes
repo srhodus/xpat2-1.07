@@ -1,0 +1,46 @@
+Hier mein Versuch, die Hilfetexte fuer xpat2-1.06 ins Deutsche
+zu uebersetzen.
+
+Ich habe mich so dicht wie moeglich an die englischen Texte
+gehalten. Manchmal habe ich mir kleinere Umstellungen erlaubt,
+wenn es dem Verstaendnis dient, oder die Terminologie angepasst
+(anscheinend kommen die Originaltexte aus verschiedenen Quellen). 
+Groessere Aenderungen habe ich nur an folgenden Stellen vorgenommen:
+
+- Spider: Ich habe das Material etwas besser strukturiert
+  (Umstellungen, Zwischenueberschriften).
+
+- Canfield: Ich habe die Beschreibung des Anfangs-Tableaus 
+  ergaenzt. Ferner benutze ich folgende Terminologie:
+  hand = Talon, talon = Ablagestapel, stock = Zusatzstapel
+  (d.h. mit Talon wird wie sonst auch der verdeckt liegende Stapel
+  mit den restlichen Karten bezeichnet).
+
+- Midnight Oil: Ich habe angegeben, wie "draw one submerged card"
+  funktioniert (danach habe ich _sehr_ lange gesucht). 
+
+- keys: Ich habe in "hilf.bedien" zusaetzlich die Bedienung durch Maus
+  und Menue beschrieben. Diese Teile habe ich aus "xpat2.tex"
+  uebernommen. Dafuer habe bei den einzelnen Spielregeln die Hinweise
+  auf Standardzuege (Karten geben, automatisches Ablegen) weggelassen.
+
+  Die Manualseite behandelt die Maus nicht, so dass ich mit der
+  Bedienung anfangs etwas Schwierigkeiten hatte. Daher habe ich mich
+  dazu entschlossen, den Hilfetext zu erweitern. Wenn das nicht
+  gewuenscht ist, kann man stattdessen "hilf.tasten" verwenden; man
+  muss dazu nur "messages" anpassen (Bedienung -> Tastatur, hilf.bedien
+  -> hilf.tastatur).
+
+  Bzgl. der Tastaturbelegung habe ich beschrieben, was tatsaechlich
+  ausgeliefert wird. Die Tasten 'u', 'r', 'l', 'o', 'O', '*' fehlen
+  also, waehrend 'f', 'b' dazugekommen sind.
+
+Bei der Rechtschreibung habe ich mich bzgl. ss/sz an die neuen Regeln
+gehalten und ansonsten meinem Gefuehl vertraut. Die deutschen Umlaute
+sind die meines 'vi' -- ich hoffe, der Zeichensatz stimmt (ich bin da
+kein Experte). Die Texte habe ich auf max. 55 Zeichen pro Zeile
+formatiert; das scheint der Standard zu sein und ist zumindest bei mir
+gut lesbar, ohne dass etwas abgeschnitten wird.
+
+Thomas Betker
+thomas.betker@freenet.de

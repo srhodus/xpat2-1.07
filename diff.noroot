@@ -1,0 +1,31 @@
+*** src/Imakefile	Sat May 15 21:02:56 1999
+--- src/Imakefile.noroot	Sat May 15 21:05:45 1999
+***************
+*** 49,61 ****
+  # BINDIR and LIBDIR should be predefined by the templates
+  # BINDIR = /usr/bin/X11
+  # LIBDIR = /usr/lib/X11
+! XPATLIBDIR = /usr/games/lib/xpat
+  APPDEFSDIR = $(LIBDIR)
+  XPATMANDIR = /usr/man/man6
+  
+  # This is the name of the log-file, where solved games are stored:
+  # an alternative path would be $(XPATLIBDIR)/xpat.log
+! SCOREFILE = /var/games/xpat.log
+  
+  
+  # paths for installation in user's home-directory.
+--- 49,61 ----
+  # BINDIR and LIBDIR should be predefined by the templates
+  # BINDIR = /usr/bin/X11
+  # LIBDIR = /usr/lib/X11
+! XPATLIBDIR = $(HOME)/xpat
+  APPDEFSDIR = $(LIBDIR)
+  XPATMANDIR = /usr/man/man6
+  
+  # This is the name of the log-file, where solved games are stored:
+  # an alternative path would be $(XPATLIBDIR)/xpat.log
+! SCOREFILE = $(XPATLIBDIR)/xpat.log
+  
+  
+  # paths for installation in user's home-directory.

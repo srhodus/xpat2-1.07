@@ -1,0 +1,66 @@
+		XPat - Tastaturbelegung
+		=======================
+
+Viele Funktionen von XPat (darunter die in den Menues)
+lassen sich an Tastaturkürzel binden. Die Funktion wird
+ausgeführt, wenn sich der Mauszeiger im XPat-Fenster
+befindet und die entsprechende Taste gedrückt wird.
+
+Im folgenden wird die Tastaturbelegung beschrieben, die
+standardmäßig mit XPat mitkommt. XPat lädt diese
+Belegung aus einer Konfigurationsdatei; die
+tatsächlichen Tastenfunktionen können daher variieren.
+
+Einige Tasten sind von XPat vorbelegt (lassen sich
+jedoch umdefinieren). Dazu gehören die folgenden Tasten,
+mit denen man die Spielvariante wechseln kann (in
+alphabetischer Reihenfolge):
+
+  B - Baker's Dozen
+  C - Canfield
+  F - Free Cell
+  G - Gypsy
+  H - SeaHaven Towers
+  I - Idiot's Delight
+  K - Klondike
+  M - Monte Carlo
+  O - Midnight Oil
+  R - Royal Cotillion
+  S - Spider
+
+Diese Tasten wechseln die Spielvariante (und beginnen
+ein neues Spiel), ohne dass eine Bestätigung eingeholt
+wird; ferner werden die Sound-Prozeduren umgangen. Für
+das neue Spiel gelten die Voreinstellungen, d.h. keine
+benutzerdefinierten Werte für Stapel- und Spaltenzahlen.
+
+Die anderen vorbelegten Tasten sind:
+
+  ^L  - Fenster auffrischen
+  ESC - Zug abbrechen
+
+Alle anderen Funktionen müssen hingegen explizit einer
+Taste zugeordnet werden. Derzeit sind die folgenden
+Tasten belegt (deutsche Fassung):
+
+  j - Vorgang bestätigen (ja)
+  n - Vorgang abbrechen (nein)
+  Q - XPat beenden (mit Bestätigung)
+  A - Spiel noch einmal beginnen
+  N - neues Spiel starten (gleiche Regeln)
+  + - nächsten Zugvorschlag zeigen
+  - - vorhergehenden Zugvorschlag zeigen
+    - Zugvorschlag ausführen
+  m - Züge selbsttätig ausführen
+  M - Fenster auf minimale Größe anpassen
+  P - Fenster für dieses Layout anpassen
+  d - neue Karten geben
+  D - neue Karten geben
+  s - aktuelle Punktwertung ausgeben
+  i - Größe des Talons ausgeben
+  v - Version von XPat ausgeben
+  f - Spalte umlaufen lassen (vorwärts)
+  b - Spalte umlaufen lassen (rückwärts)
+
+Man beachte, dass damit die Vorbelegung für die Taste
+'M' überschrieben wird.

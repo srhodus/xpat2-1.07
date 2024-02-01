@@ -1,0 +1,15 @@
+	Die Regeln für Michael's Fantasy
+	================================
+
+Diese Variante wurde erfunden, um die Spaltenumlauf-
+Kommandos von XPat zu testen. Michael's Fantasy wird mit
+einem Blatt von 52 Karten gespielt. Das Spiel ähnelt
+Free Cell [siehe dort], aber man hat nur sechs Spalten,
+und drei bis vier Karten werden anfangs verdeckt
+ausgelegt.
+
+Um das auszugleichen, kann man eine Spalte bis zu fünf
+Mal umlaufen lassen (nur aufgedeckte Karten). Dazu
+drückt man die Taste 'b' oder 'f' (für backward =
+rückwärts bzw. forward = vorwärts) und klickt dann auf
+die unterste zu bewegende Karte.

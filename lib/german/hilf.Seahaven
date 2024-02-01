@@ -1,0 +1,17 @@
+	Die Regeln für Seahaven Towers
+	==============================
+
+Seahaven Towers ähnelt Free Cell [siehe dort] (oder
+andersherum -- ich weiß nicht, welches Spiel es zuerst
+gab). Man hat zehn Spalten und vier Register, aber es
+ist schwieriger: Man darf nur Karten derselben Farbe
+aufeinander ablegen, und in einer leeren Spalte nur
+einen König.
+
+Das ursprüngliche Seahaven Towers hat noch eine weitere
+Einschränkung: Wenn man einen Block von n Karten bewegt,
+muss man mindestens n-1 freie Register haben (es lassen
+sich nur einzelne Karten bewegen). Diese Einschränkung
+kann man fallenlassen, indem man XPat mit der Option
+'-relaxed 1' aufruft, denn sie hat zur Folge, dass man
+nur Blöcke bis zu fünf Karten bewegen kann.

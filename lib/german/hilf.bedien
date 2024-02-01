@@ -1,0 +1,246 @@
+		XPat - Maus, Menü, Tastatur
+		===========================
+
+Bevor die Bedienung im einzelnen erläutert wird, hier
+ein Überblick über die Funktionen, die man am häufigsten
+braucht:
+
+Mit der linken Maustaste wird ein schneller Zug
+ausgeführt, der Bestimmungsort wird automatisch gewählt.
+Will man den Zug selber vorgeben, so markiert man Anfang
+und Ende mit der mittleren Maustaste. Die rechte
+Maustaste kann man benutzen, um sich untenliegende
+Karten in einer Spalte anzeigen lassen.
+
+Will man eine neue Runde Karten geben oder den
+Ablagestapel umdrehen, so klickt man mit der linken
+Maustaste auf den Talon (falls vorhanden) oder auf
+"Karten geben" in der Menüleiste.
+
+
+Die Maus
+
+XPat unterstützt drei Maustasten. Die Funktion der
+Tasten hängt davon ab, wo sich der Mauszeiger befindet.
+
+Linke Maustaste:
+
+Zeigt die Maus auf eine offene Karte oder eine Spalte,
+so wird mit der linken Maustaste ein schneller Zug
+ausgeführt (falls möglich): Eine Karte oder eine Gruppe
+von Karten wird automatisch gespielt, entweder auf einen
+Zielstapel oder einen anderen Platz. Züge auf Zielstapel
+haben Vorrang vor anderen Zügen.
+
+Lässt sich die oberste Karte einer Spalte auf einen
+Zielstapel hochlegen, so wird die vertikale Position der
+Maus innerhalb der Spalte ignoriert. Werden Karten an
+eine andere Spalte angelegt, so wird eine möglichst
+große Anzahl von Karten bewegt, aber begrenzt durch die
+Position der Maus. Liegen z.B. Zehn, Neun und Acht oben
+auf einer Spalte und zeigt die Maus auf die Neun, so
+werden die Acht und evtl. die Neun bewegt (falls die
+Farben passen), aber nicht die Zehn.
+
+Zeigt die Maus auf den Talon, so wird mit der linken
+Maustaste eine neue Runde Karten gegeben oder -- wenn
+der Talon leer ist -- der Ablagestapel umgedreht.
+
+Mittlere Maustaste:
+
+Will man selbst bestimmen, wohin die Karten gespielt
+werden, so benutzt man die mittlere Maustaste. Mit ihr
+wählt man zunächst eine Gruppe von Karten aus. Die
+ausgewählten Karten sollten schattiert erscheinen (oder,
+wenn man will, von gepunkteten oder farbigen Linien
+umrandet -- siehe die Optionen -markcolor, -markwidth).
+Nun bewegt man die Maus zum Bestimmungsort und drückt
+wieder die mittlere Maustaste, um den Zug auszuführen
+(falls zulässig). Um den Zug abzubrechen, klickt man
+noch einmal auf die ausgewählten Karten.
+
+Diese Funktion ist auch nützlich, um Gruppen in den
+Spalten zu sehen. Um die längste Gruppe zu markieren,
+die bewegt werden kann, klickt man mit der mittleren
+Maustaste auf die unterste offene Karte in der Spalte.
+(Um die Markierung aufzuheben, klickt man noch einmal.)
+
+Rechte Maustaste:
+
+Wenn man eine Weile gespielt hat, merkt man, dass die
+Spalten länger werden. Erreichen sie die Unterkante des
+Fensters, so werden sie dichter zusammengeschoben, damit
+sie ins Fenster passen. Irgendwann kann man nicht mehr
+sehen, welche Karten die Spalte enthält (abgesehen von
+der obersten), weil sie zu dicht zusammenliegen.
+
+Will man sich eine untenliegende Karte ansehen, so
+klickt man mit der rechten Maustaste darauf; die Karte
+wird im Vordergrund angezeigt. Die Karte verschwindet
+wieder, wenn man die Maustaste loslässt. Hält man die
+Taste gedrückt und bewegt die Maus die Spalte entlang,
+so wird eine Karte nach der anderen angezeigt.
+
+
+Die Menüleiste
+
+Die Menüs werden mit der linken Maustaste bedient.
+
+"Spiel": Mit "Merker setzen" wird ein Spielstand
+eingemerkt, zu dem man mit "Zum Merker" zurückkehren
+kann. Mit "Nachspielen" wird das Spiel im Zeitraffer
+nachgespielt (nur zum Spaß). Mit "Nochmal von vorn"
+beginnt man das Spiel bei demselben Ausgangs-Tableau,
+mit "Neues Spiel" bei einem anderen. Mit "Ende" beendet
+man XPat.
+
+"Regeln": Man kann sich die gewünschte Spielvariante aus
+einer Liste aussuchen; es wird automatisch ein neues
+Spiel begonnen,
+
+"Karten": Es wird eine neue Runde Karten gegeben (aus
+der Hand oder vom Talon), oder der Ablagestapel wird
+umgedreht.
+
+"Zurück", "Vorwärts": XPat zeichnet alle Spielzüge auf,
+so dass man beliebig viele Züge zurücknehmen kann. Die
+zurückgenommenen Züge kann man dann umgekehrt noch
+einmal ausführen.
+
+Es ist nicht nett, Karten aufzudecken und wieder
+zurückzulegen, wenn sie einem nicht gefallen. Wird daher
+ein Zug zurückgenommen, bei dem man etwas neues erfahren
+hat, so wird dies als Schummelei betrachtet und
+aufgezeichnet. Ein Spiel noch einmal von vorn zu
+beginnen wird als große Schummelei angesehen, da man nun
+evtl. die Lage aller Karten kennt. Wer ehrlich spielen
+will, kann ein versehentliches Zurücknehmen ungeschehen
+machen, wobei der Schummel-Zähler wieder abnimmt.
+
+Schummel-Zählung ist nicht für alle Spielregeln
+implementiert. Ferner wird es nicht als Schummeln
+angesehen, XPat mit einem bestimmten Stand des
+Zufallsgenerators zu starten, da man den Stand
+vielleicht von einem Freund bekommen hat (versuche
+einmal diesen ....).
+
+"Punkte": Die aktuelle Punktwertung wird angezeigt.
+
+"Tips": XPat bietet die Möglichkeit an, sich einen Zug
+vorschlagen zu lassen. Die möglichen Züge werden
+gesammelt und nach einem einfachen Algorithmus bewertet.
+Beim ersten Klick mit der linken Maustaste auf den
+Button "Tips" wird der beste Zug angezeigt, beim zweiten
+Mal der zweitbeste usw. Wurden alle Tips angezeigt, so
+wird die Meldung "(einmal rum)" ausgegeben, und die
+Folge beginnt wieder von vorn.
+
+Will man einen Hinweis noch einmal sehen, so kann man
+mit der rechten Maustaste auf "Tips" klicken, um die
+Folge rückwärts zu durchlaufen. Will man den Zug
+ausführen, der gerade angezeigt wird, so klickt man
+einfach mit der mittleren Maustaste auf "Tips".
+
+Achtung: Züge auf leere Slots werden nicht angezeigt,
+außer wenn Könige die einzigen Karten sind, die dort
+abgelegt werden können. Ebenso werden andere Züge nicht
+angezeigt, die für zu schlecht gehalten werden, z.B.
+alle Züge, bei denen Karten von den Zielstapeln
+heruntergenommen werden. Die Meldung "Keine Tips!"
+bedeutet also nicht, dass überhaupt kein Zug möglich
+ist.
+
+Das Kommando AllMoves, das an die Taste 'm' gebunden
+ist, wählt wiederholt den besten Zug und führt ihn aus
+(eine Art Automatik über einige Züge hinweg). Man sollte
+vorsichtig damit sein, da es das Spiel ruinieren kann.
+
+"Ablegen": Die markierte Karte wird auf einem passenden
+Zielstapel abgelegt. Ist keine Karte markiert, so werden
+alle in Frage kommenden Karten abgelegt.
+
+"Hilfe": Es wird ein Hilfefenster geöffnet. Mit "Gebiet"
+wählt man die anzuzeigende Hilfeseite aus, mit
+"Hilfefenster schließen" beendet man die Hilfe.
+
+"Sichern": Der Spielstand wird in einer Datei gesichert.
+Ruft man später XPat mit dem Dateinamen als Parameter
+auf, so kann man beim gesicherten Stand mit dem Spiel
+fortfahren.
+
+Der Dateiname besteht aus der Spielvariante und dem
+Anfangswert des Zufallsgenerators (z.B.
+"Gypsy.947195176"); ist der Dateiname zu lang für das
+Filesystem, so wird die Spielvariante abgekürzt.
+Existiert das File bereits, so wird es überschrieben.
+Fehlermeldungen erscheinen auf stderr.
+
+"Lärm": Die Sound-Unterstützung wird aus- oder
+eingeschaltet.
+
+
+Die Tastatur
+
+Viele Funktionen von XPat (darunter die in den Menues)
+lassen sich an Tastaturkürzel binden. Die Funktion wird
+ausgeführt, wenn sich der Mauszeiger im XPat-Fenster
+befindet und die entsprechende Taste gedrückt wird.
+
+Im folgenden wird die Tastaturbelegung beschrieben, die
+standardmäßig mit XPat mitkommt. XPat lädt diese
+Belegung aus einer Konfigurationsdatei; die
+tatsächlichen Tastenfunktionen können daher variieren.
+
+Einige Tasten sind von XPat vorbelegt (lassen sich
+jedoch umdefinieren). Dazu gehören die folgenden Tasten,
+mit denen man die Spielvariante wechseln kann (in
+alphabetischer Reihenfolge):
+
+  B - Baker's Dozen
+  C - Canfield
+  F - Free Cell
+  G - Gypsy
+  H - SeaHaven Towers
+  I - Idiot's Delight
+  K - Klondike
+  M - Monte Carlo
+  O - Midnight Oil
+  R - Royal Cotillion
+  S - Spider
+
+Diese Tasten wechseln die Spielvariante (und beginnen
+ein neues Spiel), ohne dass eine Bestätigung eingeholt
+wird; ferner werden die Sound-Prozeduren umgangen. Für
+das neue Spiel gelten die Voreinstellungen, d.h. keine
+benutzerdefinierten Werte für Stapel- und Spaltenzahlen.
+
+Die anderen vorbelegten Tasten sind:
+
+  ^L  - Fenster auffrischen
+  ESC - Zug abbrechen
+
+Alle anderen Funktionen müssen hingegen explizit einer
+Taste zugeordnet werden. Derzeit sind die folgenden
+Tasten belegt (deutsche Fassung):
+
+  j - Vorgang bestätigen (ja)
+  n - Vorgang abbrechen (nein)
+  Q - XPat beenden (mit Bestätigung)
+  A - Spiel noch einmal beginnen
+  N - neues Spiel starten (gleiche Regeln)
+  + - nächsten Zugvorschlag zeigen
+  - - vorhergehenden Zugvorschlag zeigen
+    - Zugvorschlag ausführen
+  m - Züge selbsttätig ausführen
+  M - Fenster auf minimale Größe anpassen
+  P - Fenster für dieses Layout anpassen
+  d - neue Karten geben
+  D - neue Karten geben
+  s - aktuelle Punktwertung ausgeben
+  i - Größe des Talons ausgeben
+  v - Version von XPat ausgeben
+  f - Spalte umlaufen lassen (vorwärts)
+  b - Spalte umlaufen lassen (rückwärts)
+
+Man beachte, dass damit die Vorbelegung für die Taste
+'M' überschrieben wird.

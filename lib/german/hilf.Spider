@@ -1,0 +1,175 @@
+	Die Regeln für Spider
+	=====================
+
+Für Spider wird ein Blatt von zweimal 52 Karten
+verwendet. Ziel des Spiels ist es, Kartenfolgen einer
+Farbe vom König zum As aufzubauen, die dann von den
+Spalten genommen und als Zielstapel hochgelegt werden.
+Das Spiel ist gewonnen, wenn alle acht Folgen aufgebaut
+und entfernt wurden. Bei einer schwierigeren Version
+werden fertige Folgen nicht sofort entfernt, sondern
+bleiben bis zum Schluss auf dem Tisch.
+
+
+Das Tableau
+
+Zu Beginn wird das Blatt gemischt, und es werden zehn
+Karten verdeckt nebeneinander ausgelegt. Auf jede von
+diesen zehn Karten gibt man verdeckt drei weitere. Auf
+vier der Spalten gibt man dann noch eine Karte verdeckt
+(traditionell die linken vier, aber das spielt keine
+Rolle -- manche Leute ziehen aus ästhetischen Gründen
+die erste, vierte, siebte und zehnte Spalte vor), so
+dass insgesamt 44 Karten verdeckt liegen. Schließlich
+gibt man auf jede Spalte eine Karte offen. Diese 54
+Karten bilden das Ausgangs-Tableau.
+
+
+Die Spielzüge
+
+Die Kartenfolgen werden nur in den Spalten aufgebaut,
+nicht auf den Zielstapeln. Auf die oberste Karte einer
+Spalte kann man jeweils eine nächstniedrigere Karte
+legen, unabhängig von der Farbe.
+
+Die Rangfolge von der höchsten zur niedrigsten Karte ist
+König, Dame, Bube, Zehn, Neun, ..., Drei, Zwei, As. Ein
+König darf nur in einer leeren Spalte abgelegt werden
+(oder auf einem Zielstapel, wenn die Folge König - As
+vollständig ist), da es keine höhere Karte als den König
+gibt.
+
+Gespielt werden kann stets die oberste Karte einer
+Spalte, oder jede zusammenhängende, absteigende Folge
+von Karten einer Farbe, die oben auf einer Spalte liegt.
+
+Nehmen wir an, dass die Herz-Sechs, -Fünf und -Vier oben
+auf einer Spalte liegen, mit der Vier zuoberst. Dann
+kann man diese drei Karten als Einheit bewegen, oder die
+Vier alleine, oder die Fünf und die Vier zusammen ohne
+die Sechs. Legt man die Dreiergruppe auf eine
+Herz-Sieben, so kann man diese vier Karten als Einheit
+auf irgendeine Acht bewegen. Ist die Sieben jedoch keine
+Herz-Sieben, so kann man sie nicht mehr spielen, solange
+die Herz-Karten nicht wegbewegt wurden (auf eine andere
+Sieben oder auf einen leere Spalte -- siehe unten).
+
+Hat man die offenen Karten von einer Spalte abgespielt,
+so wird die oberste verdeckte Karte umgedreht und kann
+ebenfalls gespielt werden.
+
+
+Leere Spalten
+
+Wenn alle Karten aus einer Spalte abgespielt wurden,
+erhält man einen leere Spalte (ein Loch). In einer
+leeren Spalte kann jede beliebige Karte abgelegt werden.
+Ein König (oder eine Folge vom König abwärts) kann nur
+auf eine leere Spalte verschoben und danach nicht mehr
+fortbewegt werden (außer auf eine andere leere Spalte,
+womit man nichts erreicht), bis er ganz entfernt wird
+(siehe unten).
+
+
+Der Talon
+
+Die 50 Karten, die nicht zu Beginn ausgelegt werden,
+bilden den Talon. Man kann zu jedem Zeitpunkt
+(typischerweise, wenn man steckenbleibt) eine neue Runde
+von zehn Karten geben, die offen auf die Spalten gelegt
+werden.
+
+Das darf man jedoch nicht tun, wenn es leere Spalten
+gibt; man muss sie zuerst füllen. Man beachte auch, dass
+die zusätzlichen Karten i.a. zu Sprüngen innerhalb der
+Spalten führen, da sie nicht unbedingt auf nächsthöheren
+Karten zu liegen kommen.
+
+Bleibt man stecken, nachdem die letzte von fünf
+zusätzlichen Runden gegeben wurde, so hat man verloren.
+
+Wird XPat mit der Option '-relaxed 1' aufgerufen, so
+darf man auch dann neue Karten geben, wenn alle
+nicht-leeren Spalten strikt geordnet sind, also nach
+Farbe und Wert; mit der Option '-relaxed 2' genügt es,
+wenn sie nach dem Wert geordnet sind. Mit dieser Option
+muss man bestehende Folgen nicht zerstören, um leere
+Spalten zu füllen, bevor man neue Karten bekommt.
+
+
+Die Strategie
+
+Als allgemeine Strategie möchte man eine leere Spalte
+erzeugen, da dies der einfachste Weg ist, Karten
+herumzubewegen. (Anm.: Bevor die nächste Runde gegeben
+wird, müssen alle Spalten mindestens eine Karte
+enthalten -- siehe oben.)
+
+Wenn man Karten zwischen den Spalten austauscht, ist es
+ferner vorteilhaft, die höchsten Karten zuerst und die
+niedrigsten Karten zuletzt zu bewegen, nachdem man die
+offensichtlichen Züge erledigt hat. Z.B. spielt man eine
+Pik-Fünf auf eine Pik-Sechs, dann eine Herz-Dame auf
+einen Kreuz-König, bevor man die Kreuz-Sieben auf die
+Herz-Acht spielt. Dann kann man sich aussuchen, ob man
+eine Gruppe aus Pik-Fünf und Pik-Sechs auf eine
+Kreuz-Sieben verschiebt.
+
+Soweit möglich, sollte man Karten zu Gruppen gleicher
+Farbe zu kombinieren, die man als Einheit verschieben
+kann. Wenn die Gruppe aus Pik-Fünf und Pik-Sechs einmal
+erzeugt wurde, kann man sie wieder trennen, indem man
+die untere Karte mit der mittleren Maustaste anklickt.
+
+
+Das Ziel
+
+Wenn man eine komplette Folge von dreizehn Karten, vom
+König bis zum As, oben auf einer Spalte aufgebaut hat,
+kann man diese dreizehn Karten aus dem Tableau
+herausnehmen. Das Spiel ist gewonnen, wenn man es
+schafft, alle acht Folgen zu entfernen.
+
+Herausgenommene Karten können nicht wieder ins Spiel
+zurückgebracht werden. Es ist daher nicht immer
+wünschenswert, eine solche Folge zu entfernen (obwohl
+das gewöhnlich der Fall ist), da man mit ihnen
+vielleicht die anderen Karten der betreffenden Farbe
+besser in den Griff bekommt (man beachte, dass es 26
+Karten von jeder Farbe gibt).
+
+Wenn das Spiel so gut läuft, dass man sicher ist zu
+gewinnen, so kann man es interessanter machen, indem man
+versucht, möglichst viele komplette Folgen in den
+Spalten zu behalten. Am schwierigsten ist es, das Spiel
+mit allen Folgen vom König bis hinunter zum As in den
+Spalten zu beenden. Achtung: Wenn man dieses Ziel
+anstrebt, bringt man vielleicht das Tableau so sehr
+durcheinander, dass man überhaupt nicht mehr gewinnen
+kann!
+
+
+Die Punktwertung
+
+Spider ist schwer zu meistern, und manche Spieler
+möchten ihren Fortschritt abschätzen, indem sie
+erfolglose Spiele nach Punkten bewerten. Es gibt in der
+Literatur keine Regeln dafür, aber XPat benutzt die
+folgende willkürliche Bewertung:
+
+Für jede umgedrehte Karte, die anfangs verdeckt lag,
+gibt es 10 Punkte, und 15 weitere Punkte für jede
+Spalte, in dem alle Karten umgedreht wurden (selbst wenn
+man es nicht geschafft hat, eine leere Spalte zu
+erzeugen).
+
+Jede Karte, die auf einer nächsthöheren Karte liegt,
+zählt 2 Punkte, und eine vollständige Folge einer Farbe
+50 Punkte (in diesem Fall werden die zwölf Paare
+aufeinanderfolgender Karten nicht zusätzlich gewertet).
+
+Das ergibt ein Maximum von 990 Punkten. Gewinnt man das
+Spiel mit vier oder mehr vollständigen Folgen, die sich
+noch in den Spalten befinden, so kommen 2 Punkte für
+jede Folge nach der dritten dazu. Gewinnt man mit allen
+acht Folgen in den Spalten, so ergeben sich 1000 Punkte.

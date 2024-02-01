@@ -1,0 +1,22 @@
+/* XPM */
+static const char *fileopen[] = {
+"    16    13        5            1",
+". c #000000",
+"# c #808000",
+"a c #c0c0c0",
+"b c #ffff00",
+"c c #ffffff",
+"aaaaaaaaa...aaaa",
+"aaaaaaaa.aaa.a.a",
+"aaaaaaaaaaaaa..a",
+"a...aaaaaaaa...a",
+".bcb.......aaaaa",
+".cbcbcbcbc.aaaaa",
+".bcbcbcbcb.aaaaa",
+".cbcb...........",
+".bcb.#########.a",
+".cb.#########.aa",
+".b.#########.aaa",
+"..#########.aaaa",
+"...........aaaaa"
+};

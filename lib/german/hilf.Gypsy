@@ -1,0 +1,46 @@
+	Die Regeln für Gypsy
+	====================
+
+Gypsy wird mit zwei Blatt zu 52 Karten gespielt. Es gibt
+acht Spalten, in die zu Beginn je drei Karten gegeben
+werden; zwei Karten liegen verdeckt und die oberste
+offen.
+
+An die oberste Karte einer Spalte darf man eine
+nächstniedrigere Karte anlegen, wobei Rot und Schwarz
+abwechseln müssen. Zum Beispiel darf man die Kreuz-Vier
+auf eine Herz-Fünf oder Karo-Fünf legen. Dieselbe Regel
+gilt, wenn man zusammenhängende Gruppen von Karten
+bewegt: Eine Kartengruppe kann als Block bewegt werden,
+wenn die Werte abnehmen und Rot und Schwarz abwechseln.
+
+Auf die acht Zielstapel werden die Karten einzeln in
+aufsteigender Reihenfolge hochgelegt, von As bis König.
+Eine Karte kann nur auf einem Zielstapel ihrer eigenen
+Farbe abgelegt werden. Es ist sinnvoll, alle Asse sofort
+auf die Zielstapel zu legen. Bei höheren Karten kann es
+jedoch klüger sein, sie in den Spalten zu behalten, um
+andere Karten darauf abzulegen.
+
+Es ist erlaubt, Karten von den Zielstapeln auf die
+Spalten zurückzulegen, sofern die Regeln für das Anlegen
+eingehalten werden. Das kann nützlich sein, wenn man
+leere Spalten erzeugen will, um Könige dort abzulegen.
+(Auf eine leere Spalte kann man jede Karte legen, aber
+sie sind die einzigen, auf die man Könige legen kann.)
+
+Punktwertung:
+
+Für Gypsy werden Punkte von 0 bis 1000 vergeben. Es gibt
+zwei Punkte für jedes rot-schwarze Kartenpaar in einer
+Spalte und fünf Punkte für jede Karte auf einem
+Zielstapel. Für jeden vollständigen Zielstapel von As
+bis König kommen weitere 60 Punkte hinzu.
+
+Anmerkung:
+
+Die Regeln sind keine Erfindung der Autoren von XPat,
+aber der Name Gypsy ist es. Wir spielen Gypsy seit
+Jahren, wissen aber einfach nicht, wie das Spiel
+ursprünglich genannt wurde. Wer es weiß, möge uns bitte
+Bescheid geben.

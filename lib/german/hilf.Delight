@@ -1,0 +1,25 @@
+	Die Regeln für Idiot's Delight
+	==============================
+
+Idiot's Delight benutzt ein normales Blatt von 52 Karten
+(keine Joker), wobei Asse am höchsten zählen, also mehr
+als Könige. Zu Beginn werden vier Karten offen in einer
+Reihe ausgelegt.
+
+Man darf jeweils die oberste Karte einer der vier
+Spalten wegnehmen, wenn sie niedriger ist als eine
+andere oberste Karte derselben Farbe. Wenn keine Karten
+mehr entfernt werden können, gibt man vier weitere
+Karten auf die Reste der vorhergehenden Runde und
+entfernt wieder Karten, soweit es möglich ist. Ist eine
+Spalte vollständig abgebaut, so kann man die oberste
+Karte einer anderen Spalte auf den leeren Platz legen.
+Das Spiel ist gewonnen, wenn am Ende nur noch die vier
+Asse übrigbleiben.
+
+Man sollte vorsichtig damit sein, welche Karte man auf
+einen Leerplatz legt. Man neigt dazu, die Asse so bald
+wie möglich auf die Leerplätze zu legen, aber manchmal
+ist es ratsam, andere Möglichkeiten zu berücksichtigen.
+Das hängt davon ab, welche Karten man mit dem jeweiligen
+Zug freilegen kann.

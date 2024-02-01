@@ -1,0 +1,20 @@
+	Die Regeln für Oonsoo
+	=====================
+
+Obwohl Oonsoo von der Idee her durchaus Spider ähnelt
+[siehe dort], ist es anfangs etwas verwirrend, da man
+die Karten nach dem Wert (nicht nach der Farbe) anlegt.
+
+Oonsoo wird mit 48 Karten gespielt, so dass zwölf
+Zielfolgen mit vier Karten aufzubauen sind. Die
+absteigenden Folgen sind Kreuz, Pik, Herz, Karo. Man
+darf nur Karten niedrigerer Farbe auf solche höherer
+Farbe und gleichen Wertes legen; so kann man z.B. die
+Herz-Sechs auf die Kreuz-Sechs oder Pik-Sechs, aber auf
+keine andere Karte spielen. Auf leeren Plätzen darf man
+nur Kreuz-Karten ablegen.
+
+Wer sich für Oonsoo interessiert, sollte auch die
+Implementierung von Bradford W. Mott
+(bwmott@eos.ncsu.edu) ausprobieren, die sich durch
+besondere Karten-Graphiken auszeichnet.

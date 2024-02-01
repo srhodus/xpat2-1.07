@@ -1,0 +1,85 @@
+Changes from xpat2-0.91 to xpat2-0.92
+-------------------------------------
+- fixed a bug in X-gfx2.c: tried to read Cards.conf if open failed.
+  Thanks to Mitch DSouza <m.dsouza@mrc-apu.cam.ac.uk> for pointing this out.
+- changed the default behaviour of the Seahaven rules to conform to the
+  "official" Seahaven rules. The relaxed variant of the previous xpat versions
+  may be played by 'xpat2 -rules Seahaven -p0 1'
+
+
+Changes from xpat2-0.92 to xpat2-1.00
+-------------------------------------
+- changed the version number ;-)
+  added manual
+
+
+Changes from xpat2-1.00 to xpat2-1.03
+-------------------------------------
+Most of this work was done by others. See CREDITS file for details.
+- removed the 'cmds' component from the graphic structure and code for
+  the unused 'commands' resource of the Tableau widget
+- removed #ifdef DEBUGGING's in Xaw-main.c and Xm-main.c
+- removed sun.c
+- completed permission setting in Imakefile (install target)
+- parsing hex definitions of a key was wrong in messages.c
+- fixed a bug in Xaw-main.c, a variable argument list procedure call
+  lacked a trailing NULL
+- added Xview support
+- improved French translation
+
+
+Changes from xpat2-1.03 to xpat2-1.04
+-------------------------------------
+Most of this work was done by others. See CREDITS file for details.
+- added a mkdirhier in Imakefile
+- added cuserid call in loadsave.c
+- changed the random number distribution
+- switch real and effective user ids
+- removed multiple defined global variables (commons) for elf support
+
+TODO:
+- generate solvable starting positions
+
+
+Changes from xpat2-1.04 to xpat2-1.05 (released 4-Apr-1996)
+-----------------------------------------------------------
+- removed a bug in X-gfx2.c which made it impossible to use
+  absolute directories as argument to the -xpmdir option.
+- new rules: Oonsoo
+
+
+Changes from xpat2-1.05 to xpat2-1.06
+-------------------------------------
+- The BlueMoon rule set was added by Willem Monsuwe
+- FreeCell rules are smarter now when moving cards and slots are free
+- Cardbacks are loaded later, have a fallback Cardback when loading
+  of a one with too much colors fails
+- new Cardback: Tux, the Linux penguin,
+  antialiased X-logo background
+- new xpm directory 'fallback', with images using less colours
+- more code moved from X-*.c into UI-independent files
+- minor improvements for the Motif/Lesstif UI, renamed useMotif to
+  useXm (libXm.a is the common name of the library for Motif and LessTif)
+- started work on the Qt widget user interface, will perhaps later support
+  KDE, despite I think it's too much Windooze-like
+- incorporated the patches from the Debian distribution
+- added loading of cardsets for monochrome servers from X-gfx1 into X-gfx2
+- improved handling of the LANG environment variable
+  (access checking, handling of ISO3166 codes, and possible fallbacks to
+  the English language in case the given LANG value fails)
+- new sound module X-sound_NAS.c, using the NAS network audio system.
+  (useful when you're on an X-Terminal with no local /dev/audio).
+  Attention: this requires the installation of the (free) NAS server.
+- script for incorporating cardsets from pysol.
+  pysol can be found at ftp://ftp.metalab.unc.de/pub/Linux/games/solitaire
+
+Changes from xpat2-1.06 to xpat2-1.07
+-------------------------------------
+This is mostly a contrib release. I have added improvements obtained
+from the net:
+- German rules by Thomas Betker (thomas.betker@freenet.de)
+- improvements for the motif interface by Karsten Jensen
+  (karsten.w.jensen@get2net.dk)
+- a new motif interface and work on Imakefile by Christian Anzenberger
+  (christian.anzenberger@siemens.at)
+- minor adaptions to make xpat2 work with Qt 2.x

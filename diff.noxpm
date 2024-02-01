@@ -1,0 +1,25 @@
+*** src/Imakefile	Sat May 15 21:02:56 1999
+--- src/Imakefile.noxpm	Sat May 15 21:07:53 1999
+***************
+*** 38,47 ****
+  # SOUNDLIB =
+  
+  # 5.) specify, if you want the antialiased card construction set (SLOW!)
+! #define USE_CARD_CONSTRUCTION
+  
+  # 6.) if you answered NO to 5.): Do you want support for full xpm cards?
+! #define USE_XPM
+  
+  # 7.) if you answered NO to 5.): Do you want to load external bitmap cards?
+  #define USE_LOADCARDS
+--- 38,47 ----
+  # SOUNDLIB =
+  
+  # 5.) specify, if you want the antialiased card construction set (SLOW!)
+! #undef USE_CARD_CONSTRUCTION
+  
+  # 6.) if you answered NO to 5.): Do you want support for full xpm cards?
+! #undef USE_XPM
+  
+  # 7.) if you answered NO to 5.): Do you want to load external bitmap cards?
+  #define USE_LOADCARDS

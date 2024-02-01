@@ -1,0 +1,27 @@
+	Die Regeln für Monte Carlo
+	==========================
+
+Monte Carlo wird mit einem Standardblatt von 52 Karten
+gespielt (keine Joker). Zu Beginn wird das Blatt
+gemischt, dann in fünf Reihen zu fünf Karten offen
+ausgelegt (Tableau); der Rest des Blattes wird als Talon
+zurückgehalten.
+
+Nun werden alle Paare von Karten entfernt, die denselben
+Wert haben (z.B. Herz-Drei und Pik-Drei, die Farbe
+spielt keine Rolle) und benachbart sind -- horizontal,
+vertikal oder diagonal. Man beachte, dass durch das
+Entfernen einer Karte z.B. die Karten links und rechts
+davon nicht sofort Nachbarn werden.
+
+Nachdem alle möglichen Kartenpaare entfernt wurden, wird
+das Tableau konsolidiert: Die übrigen Karten werden
+"nachgeschoben", um die Lücken zu füllen (nach links und
+nach oben, so dass die Reihenfolge erhalten bleibt), und
+es werden Karten aus dem Talon ergänzt.
+
+Dieser Ablauf -- das Entfernen von Kartenpaaren mit
+anschliessender Konsolidierung -- kann beliebig oft
+wiederholt werden. Das Spiel ist gewonnen, wenn das
+gesamte Blatt entfernt wurde, oder verloren, wenn kein
+Zug mehr möglich ist.

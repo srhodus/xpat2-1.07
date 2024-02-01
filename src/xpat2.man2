@@ -1,0 +1,17 @@
+.SH FILES
+(Directories may differ on your system.)
+
+ \fB/usr/games/bin/xpat2\fP
+ \fB/var/games/xpat.log\fP
+ \fB/usr/doc/xpat/COPYRIGHT.{GNU,spider,xpm}\fP
+ \fB/usr/games/lib/xpat/small.cards\fP
+ \fB/usr/games/lib/xpat/french.cards\fP
+ \fB/usr/games/lib/xpat/audio/success.au\fP
+ \fB/usr/games/lib/xpat/audio/giveup.au\fP
+ \fB/usr/games/lib/xpat/audio/goodbye.au\fP
+ \fB/usr/games/lib/xpat/audio/cannotsave.au\fP
+ \fB/usr/games/lib/xpat/help.*\fP
+ \fB/usr/games/lib/xpat/hlp*\fP
+
+and a number of subdirs of \fB/usr/games/lib/xpat\fP, containing sets of colour
+cards.
